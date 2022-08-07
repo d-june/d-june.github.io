@@ -7033,6 +7033,7 @@ body {
 
 .footer {
   padding: 8.75rem 0rem 1.25rem 0rem;
+  background: url("../img/contact-bg.webp") center/cover no-repeat;
   color: #fff;
   position: relative;
 }
@@ -13410,4 +13411,4 @@ body {
 
 .webp .header__wrapper{ background: url(../img/main-banner.webp) center/cover no-repeat; }
 
-.webp .footer{ background: url(../img/contact-bg.webp) center/cover no-repeat; }
+.webp .footer{ background: url(img/contact-bg.webp) center/cover no-repeat; }
