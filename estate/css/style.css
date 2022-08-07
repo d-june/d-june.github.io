@@ -478,6 +478,7 @@ body::after {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.875rem;
+  width: 100%;
 }
 
 .row-footer {
@@ -2040,11 +2041,6 @@ body::after {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
-  }
-
-  .footer__container {
-    width: 100%;
-    padding: 1.875rem;
   }
 
   .footer__logo-ibg-contain {
