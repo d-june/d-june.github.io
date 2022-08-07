@@ -669,7 +669,7 @@ body::after {
 .banner-main {
   width: 100%;
   position: relative;
-  height: 92vh;
+  height: 91vh;
 }
 
 .banner-main__image-ibg {
@@ -693,9 +693,9 @@ body::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 1.25rem;
   padding: 3.75rem;
 }
@@ -742,6 +742,8 @@ body::after {
 .banner-main__button {
   width: 4rem;
   height: 4rem;
+  position: absolute;
+  bottom: 3.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1914,18 +1916,6 @@ body::after {
 }
 
 @media (max-width: 61.99875em) {
-@supports (height: clamp( 21.875rem , 16.3804945055rem  +  27.4725274725vw , 37.5rem )) {
-    .banner-main {
-      height: clamp( 21.875rem , 16.3804945055rem  +  27.4725274725vw , 37.5rem );
-    }
-}
-
-@supports not (height: clamp( 21.875rem , 16.3804945055rem  +  27.4725274725vw , 37.5rem )) {
-    .banner-main {
-      height: calc(21.875rem + 15.625 * (100vw - 20rem) / 56.875);
-    }
-}
-
   .banner-main__button {
     width: 2.5rem;
     height: 2.5rem;
@@ -2094,12 +2084,6 @@ body::after {
 
   .banner-main__logo {
     max-width: 6.25rem;
-  }
-
-  .banner-main__button {
-    width: 1.875rem;
-    height: 1.875rem;
-    font-size: 1rem;
   }
 
   .requirements-main__content {
