@@ -478,7 +478,6 @@ body::after {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.875rem;
-  width: 100%;
 }
 
 .row-footer {
@@ -2053,6 +2052,11 @@ body::after {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
+  }
+
+  .row-footer__subscribe {
+    width: 100%;
   }
 
   .spoller-row-footer__title::after {
