@@ -2042,10 +2042,6 @@ body::after {
             transform: rotate(45deg);
   }
 
-  .footer__container {
-    width: 80%;
-  }
-
   .footer__logo-ibg-contain {
     width: 6.25rem;
     height: 2.3125rem;
