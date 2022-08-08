@@ -3592,6 +3592,7 @@ button.swiper-pagination-bullet {
     position: relative;
     z-index: 5;
     font-size: 1rem;
+    float: right;
   }
 
   .form-middle-header__item {
@@ -3635,16 +3636,8 @@ button.swiper-pagination-bullet {
   }
 
   .form-middle-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 100%;
-    -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    display: block;
   }
 
   .cart-middle-header__body {
