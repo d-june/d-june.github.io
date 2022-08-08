@@ -494,8 +494,8 @@ body::after {
 
 .row-footer__subscribe {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 38.1666666667%;
-          flex: 0 1 38.1666666667%;
+      -ms-flex: 0 1 38.17%;
+          flex: 0 1 38.17%;
 }
 
 .spoller-row-footer__title {
@@ -2056,7 +2056,9 @@ body::after {
   }
 
   .row-footer__subscribe {
-    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
   }
 
   .spoller-row-footer__title::after {
