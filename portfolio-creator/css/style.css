@@ -3226,7 +3226,7 @@ button.swiper-pagination-bullet {
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    height: 100%;
+    height: 100vh;
     color: #ffffff;
     text-transform: uppercase;
     -webkit-transition: all 0.3s ease 0s;
