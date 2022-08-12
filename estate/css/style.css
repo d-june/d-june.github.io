@@ -599,23 +599,24 @@ body::after {
   border: 1px solid #E5E7EB;
   border-radius: 8px;
   padding: 0.25rem 0.25rem 0.25rem 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4.5625rem;
+  grid-template-columns: 1fr 4.5625rem;
 }
 
 .subscribe-item-footer__input {
   outline: none;
   border-radius: 8px;
   background: #F9FAFB;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .subscribe-item-footer__button {
   background: #3A4443;
   border-radius: 10px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 4.5625rem;
-          flex: 0 0 4.5625rem;
   height: 2.4375rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -629,6 +630,7 @@ body::after {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  padding: 0.3125rem;
 }
 
 .subscribe-item-footer__button:hover {
