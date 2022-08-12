@@ -1557,15 +1557,15 @@ body::after {
   }
 }
 
-@supports (width: clamp( 7.5rem , 3.8991769547rem  +  18.0041152263vw , 18.4375rem )) {
+@supports (width: clamp( 9.375rem , 6.3914609053rem  +  14.9176954733vw , 18.4375rem )) {
   .slider-main__button {
-    width: clamp( 7.5rem , 3.8991769547rem  +  18.0041152263vw , 18.4375rem );
+    width: clamp( 9.375rem , 6.3914609053rem  +  14.9176954733vw , 18.4375rem );
   }
 }
 
-@supports not (width: clamp( 7.5rem , 3.8991769547rem  +  18.0041152263vw , 18.4375rem )) {
+@supports not (width: clamp( 9.375rem , 6.3914609053rem  +  14.9176954733vw , 18.4375rem )) {
   .slider-main__button {
-    width: calc(7.5rem + 10.9375 * (100vw - 20rem) / 60.75);
+    width: calc(9.375rem + 9.0625 * (100vw - 20rem) / 60.75);
   }
 }
 
@@ -1609,15 +1609,15 @@ body::after {
   width: 100%;
 }
 
-@supports (height: clamp( 18.75rem , 11.0133744856rem  +  38.683127572vw , 42.25rem )) {
+@supports (height: clamp( 21.875rem , 15.16718107rem  +  33.5390946502vw , 42.25rem )) {
   .slider-main__image {
-    height: clamp( 18.75rem , 11.0133744856rem  +  38.683127572vw , 42.25rem );
+    height: clamp( 21.875rem , 15.16718107rem  +  33.5390946502vw , 42.25rem );
   }
 }
 
-@supports not (height: clamp( 18.75rem , 11.0133744856rem  +  38.683127572vw , 42.25rem )) {
+@supports not (height: clamp( 21.875rem , 15.16718107rem  +  33.5390946502vw , 42.25rem )) {
   .slider-main__image {
-    height: calc(18.75rem + 23.5 * (100vw - 20rem) / 60.75);
+    height: calc(21.875rem + 20.375 * (100vw - 20rem) / 60.75);
   }
 }
 
