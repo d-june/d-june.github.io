@@ -550,6 +550,17 @@ body::after {
   text-decoration: underline;
 }
 
+.subscribe-item-footer {
+  position: relative;
+}
+
+.subscribe-item-footer .form__error {
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.625rem;
+  color: red;
+}
+
 .copy-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1828,6 +1839,12 @@ body::after {
   display: none !important;
 }
 
+@media (max-width: 1000px) {
+  .subscribe-item-footer .form__error {
+    bottom: -10px;
+  }
+}
+
 @media (max-width: 61.99875em) {
   .banner-main__button {
     width: 2.5rem;
@@ -1971,6 +1988,10 @@ body::after {
     -webkit-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+
+  .subscribe-item-footer .form__error {
+    bottom: -20px;
   }
 
   .copy-footer {
