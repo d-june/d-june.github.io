@@ -601,17 +601,14 @@ body::after {
   padding: 0.25rem 0.25rem 0.25rem 2rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 4.5625rem;
-  grid-template-columns: 1fr 4.5625rem;
+  -ms-grid-columns: auto 4.5625rem;
+  grid-template-columns: auto 4.5625rem;
 }
 
 .subscribe-item-footer__input {
   outline: none;
   border-radius: 8px;
   background: #F9FAFB;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
 }
 
 .subscribe-item-footer__button {
