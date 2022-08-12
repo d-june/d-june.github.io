@@ -745,7 +745,7 @@ body::after {
 .header__wrapper {
   position: absolute;
   width: 100%;
-  top: 0;
+  z-index: 1;
 }
 
 .header__body {
@@ -1496,6 +1496,7 @@ body::after {
 
 .slider-main {
   position: relative;
+  z-index: 0;
 }
 
 .slider-main__container {
@@ -4518,6 +4519,7 @@ button.swiper-pagination-bullet {
 @media (max-width: 61.99875em) {
   .header__container {
     padding: 0;
+    height: 0;
   }
 
   .header__body {
