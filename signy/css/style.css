@@ -4492,42 +4492,6 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 600px) {
-  .footer__row {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-
-@supports (margin-bottom: clamp( 1.875rem , 1.2577160494rem  +  3.0864197531vw , 3.75rem )) {
-    .footer__row {
-      margin-bottom: clamp( 1.875rem , 1.2577160494rem  +  3.0864197531vw , 3.75rem );
-    }
-}
-
-@supports not (margin-bottom: clamp( 1.875rem , 1.2577160494rem  +  3.0864197531vw , 3.75rem )) {
-    .footer__row {
-      margin-bottom: calc(1.875rem + 1.875 * (100vw - 20rem) / 60.75);
-    }
-}
-
-@supports (margin-bottom: clamp( 0.9375rem , 0.6288580247rem  +  1.5432098765vw , 1.875rem )) {
-    .footer__logo {
-      margin-bottom: clamp( 0.9375rem , 0.6288580247rem  +  1.5432098765vw , 1.875rem );
-    }
-}
-
-@supports not (margin-bottom: clamp( 0.9375rem , 0.6288580247rem  +  1.5432098765vw , 1.875rem )) {
-    .footer__logo {
-      margin-bottom: calc(0.9375rem + 0.9375 * (100vw - 20rem) / 60.75);
-    }
-}
-
-  .menu-footer__main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
   .copy-footer__item {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -5069,6 +5033,42 @@ button.swiper-pagination-bullet {
 
   .menu__sub-item:not(:last-child) {
     margin-bottom: 1.25rem;
+  }
+
+  .footer__row {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+@supports (margin-bottom: clamp( 1.875rem , 1.2577160494rem  +  3.0864197531vw , 3.75rem )) {
+    .footer__row {
+      margin-bottom: clamp( 1.875rem , 1.2577160494rem  +  3.0864197531vw , 3.75rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.875rem , 1.2577160494rem  +  3.0864197531vw , 3.75rem )) {
+    .footer__row {
+      margin-bottom: calc(1.875rem + 1.875 * (100vw - 20rem) / 60.75);
+    }
+}
+
+@supports (margin-bottom: clamp( 0.9375rem , 0.6288580247rem  +  1.5432098765vw , 1.875rem )) {
+    .footer__logo {
+      margin-bottom: clamp( 0.9375rem , 0.6288580247rem  +  1.5432098765vw , 1.875rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 0.9375rem , 0.6288580247rem  +  1.5432098765vw , 1.875rem )) {
+    .footer__logo {
+      margin-bottom: calc(0.9375rem + 0.9375 * (100vw - 20rem) / 60.75);
+    }
+}
+
+  .menu-footer__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .subscription__form {
