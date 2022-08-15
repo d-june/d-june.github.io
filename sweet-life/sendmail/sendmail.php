@@ -11,7 +11,7 @@
 	$mail->IsHTML(true);
 
 	//От кого письмо
-	$mail->setFrom('from@gmail.com', 'Фрилансер по жизни'); // Указать нужный E-mail
+	$mail->setFrom('katrin.dudina@mail.ru', 'Екатерина'); // Указать нужный E-mail
 	//Кому отправить
 	$mail->addAddress('katrin.dudina@mail.ru'); // Указать нужный E-mail
 	//Тема письма
