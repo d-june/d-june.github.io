@@ -564,7 +564,8 @@ body::after {
 }
 
 .hero-header {
-  height: 80%;
+  height: 60%;
+  padding: 6.25rem 0rem;
 }
 
 .hero-header__container {
@@ -580,9 +581,9 @@ body::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -989,6 +990,28 @@ textarea.form-popup__input:focus {
   font-size: 1rem;
 }
 
+.popup-product__add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.popup-product__input,
+.popup-product__label {
+  cursor: pointer;
+}
+
+.popup-product__delivery {
+  margin-bottom: 1.25rem;
+  line-height: 150%;
+}
+
+.popup-product__delivery a {
+  color: #F76C6C;
+}
+
 .popup-product__buy {
   width: 9.375rem;
   font-size: 0.875rem;
@@ -998,11 +1021,16 @@ textarea.form-popup__input:focus {
   padding: 3.125rem 0rem;
 }
 
-.products-main__container {
+.products-main__wrapper {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.25rem;
+}
+
+.products-main__title {
+  color: #F76C6C;
+  margin-bottom: 1.25rem;
 }
 
 .item-products-main {
@@ -2032,6 +2060,10 @@ button.swiper-pagination-bullet {
     max-width: 46.875rem;
   }
 
+  .header {
+    min-height: 90vh;
+  }
+
   .header__top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2040,7 +2072,7 @@ button.swiper-pagination-bullet {
   }
 
   .popup-product__content {
-    max-width: 90%;
+    max-width: 95%;
   }
 }
 
@@ -2178,6 +2210,32 @@ button.swiper-pagination-bullet {
   .popup-product__body {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .popup-product__description {
+    padding: 1.25rem;
+  }
+
+  .popup-product__title {
+    margin-bottom: 1.25rem;
+  }
+
+  .popup-product__consist {
+    margin-bottom: 1.25rem;
+    line-height: 120%;
+  }
+
+  .popup-product__weight {
+    margin-bottom: 1.25rem;
+  }
+
+  .popup-product__add {
+    margin-bottom: 1.25rem;
+  }
+
+  .popup-product__delivery {
+    margin-bottom: 1.25rem;
+    line-height: 120%;
   }
 }
 
