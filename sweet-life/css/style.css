@@ -2212,6 +2212,10 @@ button.swiper-pagination-bullet {
     grid-template-columns: 1fr;
   }
 
+  .popup-product__picture-ibg {
+    min-height: 12.5rem;
+  }
+
   .popup-product__description {
     padding: 1.25rem;
   }
