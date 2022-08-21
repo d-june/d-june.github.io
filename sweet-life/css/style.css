@@ -1083,6 +1083,18 @@ textarea.form-popup__input:focus {
   margin: 0 auto;
 }
 
+.popup-product__content .popup__close {
+  background-color: #F76C6C;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 0.625rem;
+}
+
+.popup-product__content .popup__close::before,
+.popup-product__content .popup__close::after {
+  background: #fff;
+}
+
 .popup-product__body {
   display: -ms-grid;
   display: grid;
@@ -1198,8 +1210,8 @@ textarea.form-popup__input:focus {
 }
 
 .popup-delivery__content .popup__close {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1.875rem;
+  height: 1.875rem;
 }
 
 .popup-delivery__body {
@@ -1211,7 +1223,7 @@ textarea.form-popup__input:focus {
 }
 
 .popup-delivery__text {
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0.625rem;
   line-height: 140%;
 }
 
@@ -2278,6 +2290,10 @@ button.swiper-pagination-bullet {
   .popup-delivery__content {
     max-width: 90%;
   }
+
+  .popup-delivery__body {
+    padding: 3.75rem 1.25rem;
+  }
 }
 
 @media (max-width: 47.99875em) {
@@ -2416,10 +2432,14 @@ button.swiper-pagination-bullet {
             transform: rotate(45deg);
   }
 
+  .footer__container {
+    padding: 1.25rem;
+  }
+
   .footer__wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    padding: 1.875rem 1.25rem;
+    padding: 0rem 1.25rem;
     gap: 1.875rem;
   }
 
@@ -2443,12 +2463,6 @@ button.swiper-pagination-bullet {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-
-  .popup-product__content .popup__close {
-    width: 2.5rem;
-    height: 0px;
-    margin-top: 1.25rem;
   }
 
   .popup-product__body {
