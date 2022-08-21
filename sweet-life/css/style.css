@@ -2419,7 +2419,7 @@ button.swiper-pagination-bullet {
   .footer__wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    padding: 0rem 1.25rem;
+    padding: 1.875rem 1.25rem;
     gap: 1.875rem;
   }
 
