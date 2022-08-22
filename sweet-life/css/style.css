@@ -1412,6 +1412,14 @@ textarea.form-popup__input:focus {
           align-items: center;
 }
 
+.comments-main {
+  padding: 1.875rem 0rem;
+}
+
+.comments-main__title {
+  margin-bottom: 1.875rem;
+}
+
 .swiper {
   overflow: hidden;
 }
