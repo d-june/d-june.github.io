@@ -1564,6 +1564,9 @@ textarea.form-popup__input:focus {
 .select__title {
   color: rgb(83, 82, 82);
   width: 25rem;
+}
+
+.spollers-constructor-main__title {
   margin-bottom: 1.25rem;
   color: #F76C6C;
 }
