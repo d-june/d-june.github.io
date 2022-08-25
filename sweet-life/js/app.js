@@ -5216,24 +5216,49 @@
                 animOnScroll();
             }), 300);
         }
-        const totalWeight = document.querySelector(".total-constructor-main__weight"), totalPrice = document.querySelector(".total-constructor-main__price"), container = document.querySelector(".constructor-main__container"), totalWeightPopup = document.querySelector(".total-form-popup__weight"), totalPricePopup = document.querySelector(".total-form-popup__cost");
-        container.addEventListener("click", calculateOrder);
+        const container = document.querySelector(".constructor-main__container"), calculate = document.querySelector(".total-constructor-main__calculate");
+        calculate.addEventListener("click", (() => {
+            calculateOrder();
+            showOrderButton();
+        }));
         container.addEventListener("click", inputChecked);
         function calculateOrder() {
-            const cake = document.querySelector(".constructor-main__cake input:checked"), cream = document.querySelector(".constructor-main__cream input:checked");
-            const cakePrice = Number(cake.dataset.price), creamPrice = Number(cream.dataset.price), cakeWeight = Number(cake.dataset.weight), creamWeight = Number(cream.dataset.weight), startPrice = 1e3;
-            totalPrice.innerHTML = (startPrice + cakePrice + creamPrice).toLocaleString() + " " + "₽";
+            const decorCheckboxes = document.querySelectorAll(".constructor-main__decor input:checked"), decorSelects = document.querySelectorAll(".spollers-constructor-main__select");
+            let sumOfCheckedCheckboxes = 0;
+            let sumOfSelectedOptions = 0;
+            decorSelects.forEach((select => {
+                sumOfSelectedOptions = Number(sumOfSelectedOptions) + Number(select.options[select.selectedIndex].dataset.price);
+            }));
+            decorCheckboxes.forEach((checkbox => {
+                sumOfCheckedCheckboxes = Number(sumOfCheckedCheckboxes) + Number(checkbox.dataset.price);
+            }));
+            printTotalPrice(sumOfCheckedCheckboxes, sumOfSelectedOptions);
+            printTotalWeight();
+        }
+        function inputChecked() {
+            const cakeChecked = document.querySelector(".spollers-constructor-main__cake input:checked"), creamChecked = document.querySelector(".spollers-constructor-main__cream input:checked"), buttons = document.querySelectorAll(".spollers-constructor-main__button");
+            buttons.forEach((button => {
+                button.classList.remove("active-popup");
+            }));
+            cakeChecked.parentNode.classList.add("active-popup");
+            creamChecked.parentNode.classList.add("active-popup");
+        }
+        function showOrderButton() {
+            const odrerButton = document.querySelector(".total-constructor-main__order");
+            odrerButton.classList.add("show-button");
+        }
+        function printTotalPrice(sumOfCheckedCheckboxes, sumOfSelectedOptions) {
+            const cake = document.querySelector(".spollers-constructor-main__cake input:checked"), cream = document.querySelector(".spollers-constructor-main__cream input:checked"), totalPrice = document.querySelector(".total-constructor-main__price"), totalPricePopup = document.querySelector(".total-form-popup__cost");
+            const cakePrice = Number(cake.dataset.price), creamPrice = Number(cream.dataset.price), startPrice = 2e3;
+            totalPrice.innerHTML = (startPrice + cakePrice + creamPrice + sumOfCheckedCheckboxes + sumOfSelectedOptions).toLocaleString() + " " + "₽";
+            totalPricePopup.innerHTML = (startPrice + cakePrice + creamPrice + sumOfCheckedCheckboxes + sumOfSelectedOptions).toLocaleString() + " " + "₽";
+        }
+        function printTotalWeight() {
+            const cake = document.querySelector(".spollers-constructor-main__cake input:checked"), cream = document.querySelector(".spollers-constructor-main__cream input:checked"), totalWeight = document.querySelector(".total-constructor-main__weight"), totalWeightPopup = document.querySelector(".total-form-popup__weight");
+            const cakeWeight = Number(cake.dataset.weight), creamWeight = Number(cream.dataset.weight);
             totalWeight.innerHTML = `${(cakeWeight + creamWeight).toFixed(2)} кг.`;
-            totalPricePopup.innerHTML = (startPrice + cakePrice + creamPrice).toLocaleString() + " " + "₽";
             totalWeightPopup.innerHTML = `${(cakeWeight + creamWeight).toFixed(2)} кг.`;
         }
-        calculateOrder();
-        function inputChecked() {
-            const cake = document.querySelector(".constructor-main__cake input:checked"), cream = document.querySelector(".constructor-main__cream input:checked");
-            cake.parentNode.classList.toggle("active-popup");
-            cream.parentNode.classList.toggle("active-popup");
-        }
-        inputChecked();
         window["FLS"] = true;
         isWebp();
         menuInit();
