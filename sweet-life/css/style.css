@@ -2707,7 +2707,7 @@ button.swiper-pagination-bullet {
     top: -100%;
     right: 0;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgba(23, 29, 49, 0.8745098039);
     padding-top: 4.375rem;
     overflow: auto;
@@ -2930,11 +2930,6 @@ button.swiper-pagination-bullet {
 @media (max-height: 600px) {
   .header {
     height: 37.5rem;
-  }
-
-  .menu-header__body {
-    height: 37.5rem;
-    overflow: auto;
   }
 }
 
