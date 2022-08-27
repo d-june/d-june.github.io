@@ -2930,6 +2930,10 @@ button.swiper-pagination-bullet {
 @media (max-height: 600px) {
   .header {
     height: 37.5rem;
+  }
+
+  .menu-header__body {
+    height: 37.5rem;
     overflow: auto;
   }
 }
