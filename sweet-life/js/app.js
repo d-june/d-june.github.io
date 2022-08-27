@@ -5223,11 +5223,12 @@
         }));
         container.addEventListener("click", inputChecked);
         function calculateOrder() {
-            const decorCheckboxes = document.querySelectorAll(".constructor-main__decor input:checked"), decorSelects = document.querySelectorAll(".spollers-constructor-main__select");
+            const decorCheckboxes = document.querySelectorAll(".constructor-main__decor input:checked"), decorSelects = document.querySelectorAll(".spollers-constructor-main__option");
             let sumOfCheckedCheckboxes = 0;
             let sumOfSelectedOptions = 0;
             decorSelects.forEach((select => {
-                sumOfSelectedOptions = Number(sumOfSelectedOptions) + Number(select.options[select.selectedIndex].dataset.price);
+                console.log(select.selected);
+                if (select.selected) sumOfSelectedOptions = Number(sumOfSelectedOptions) + Number(select.dataset.price);
             }));
             decorCheckboxes.forEach((checkbox => {
                 sumOfCheckedCheckboxes = Number(sumOfCheckedCheckboxes) + Number(checkbox.dataset.price);
