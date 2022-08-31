@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220829212424">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220831210427">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -730,7 +730,7 @@
 			<section class="main__comments comments-main">
 				<div class="comments-main__container">
 					<h2 class="comments-main__title title">Напишите нам свое мнение:</h2>
-					<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168&_v=20220829212424"></script>
+					<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168&_v=20220831210427"></script>
 					<script type="text/javascript">
 						VK.init({
 							apiId: 51407949,
@@ -749,7 +749,26 @@
 				</div>
 
 			</section>
-
+			<section class="main__preloader">
+				<div class="preloader">
+					<div class="preloader__loader">
+						<div class="lds-spinner">
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+					</div>
+				</div>
+			</section>
 
 		</main>
 		<footer class="footer">
@@ -827,7 +846,10 @@
 						</div>
 						<div class="form-popup__item">
 							<div class="form-popup__text">Дата доставки:</div>
-							<input class="form-popup__calendar calendar-constructor" placeholder="ДД.ММ.ГГГГ" readonly>
+							<label for="calendar" class="form-popup__date _icon-calendar">
+								<input class="form-popup__calendar calendar-constructor" id="calendar" placeholder="ДД.ММ.ГГГГ"
+									readonly>
+							</label>
 							<div class="form-popup__text form-popup__text_small">*заказ нужно сделать минимум за 3 дня до даты
 								доставки</div>
 						</div>
@@ -1345,7 +1367,10 @@
 						</div>
 						<div class="form-popup__item">
 							<div class="form-popup__text">Дата доставки:</div>
-							<input class="form-popup__calendar calendar-order-ready" placeholder="ДД.ММ.ГГГГ" readonly>
+							<label for="calendar" class="form-popup__date _icon-calendar">
+								<input class="form-popup__calendar calendar-order-ready" id="calendar" placeholder="ДД.ММ.ГГГГ"
+									readonly>
+							</label>
 							<div class="form-popup__text form-popup__text_small">*заказ нужно сделать минимум за 3 дня до даты
 								доставки</div>
 						</div>
@@ -1378,7 +1403,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220829212424"></script>
+	<script src="js/app.min.js?_v=20220831210427"></script>
 </body>
 
 </html>
