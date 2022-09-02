@@ -1755,7 +1755,12 @@ textarea.form-popup__input:focus {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  color: #F76C6C;
+  color: rgb(83, 82, 82);
+}
+
+.total-form-popup__text span {
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 .total-form-popup__weight {
@@ -1766,6 +1771,10 @@ textarea.form-popup__input:focus {
 .total-form-popup__cost {
   font-size: 1rem;
   font-weight: 500;
+}
+
+#order-ready-text {
+  color: #F76C6C;
 }
 
 .form-popup__radio:checked + .form-popup__radiolabel::after {

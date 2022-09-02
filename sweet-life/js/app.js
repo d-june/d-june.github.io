@@ -5341,6 +5341,16 @@
         overlayPlaceholder: "Год",
         overlayButton: "Выбрать"
     });
+    const popups = document.querySelector(".popups");
+    popups.addEventListener("click", (e => {
+        let target = e.target;
+        if (target.classList.contains("popup-product__buy")) {
+            const popupProductBody = target.parentNode.parentNode, popupProductPrice = popupProductBody.querySelector(".popup-product__price span").innerText, popupProductWeight = popupProductBody.querySelector(".popup-product__weight span").innerText, productName = popupProductBody.querySelector(".popup-product__title").innerText, orderPrice = document.querySelector("#order-ready-cost span"), orderWeight = document.querySelector("#order-ready-weight span"), orderText = document.querySelector("#order-ready-text span");
+            orderText.innerText = `${productName}`;
+            orderPrice.innerText = popupProductPrice + " " + "руб.";
+            orderWeight.innerText = popupProductWeight;
+        }
+    }));
     window["FLS"] = true;
     isWebp();
     menuInit();
