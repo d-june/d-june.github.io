@@ -4871,15 +4871,19 @@
         const decorCheckboxes = document.querySelectorAll(".constructor-main__decor input:checked"), decorSelects = document.querySelectorAll(".spollers-constructor-main__option");
         let sumOfCheckedCheckboxes = 0;
         let sumOfSelectedOptions = 0;
+        let sumOfWeightSelectedOptions = 0;
         decorSelects.forEach((select => {
             console.log(select.selected);
-            if (select.selected) sumOfSelectedOptions = Number(sumOfSelectedOptions) + Number(select.dataset.price);
+            if (select.selected) {
+                sumOfSelectedOptions = Number(sumOfSelectedOptions) + Number(select.dataset.price);
+                if (select.dataset.weight) sumOfWeightSelectedOptions = Number(sumOfWeightSelectedOptions) + Number(select.dataset.weight);
+            }
         }));
         decorCheckboxes.forEach((checkbox => {
             sumOfCheckedCheckboxes = Number(sumOfCheckedCheckboxes) + Number(checkbox.dataset.price);
         }));
         printTotalPrice(sumOfCheckedCheckboxes, sumOfSelectedOptions);
-        printTotalWeight();
+        printTotalWeight(sumOfWeightSelectedOptions);
     }
     function inputChecked() {
         const cakeChecked = document.querySelector(".spollers-constructor-main__cake input:checked"), creamChecked = document.querySelector(".spollers-constructor-main__cream input:checked"), buttons = document.querySelectorAll(".spollers-constructor-main__button");
@@ -4899,11 +4903,11 @@
         totalPrice.innerHTML = (startPrice + cakePrice + creamPrice + sumOfCheckedCheckboxes + sumOfSelectedOptions).toLocaleString() + " " + "₽";
         totalPricePopup.innerHTML = (startPrice + cakePrice + creamPrice + sumOfCheckedCheckboxes + sumOfSelectedOptions).toLocaleString() + " " + "₽";
     }
-    function printTotalWeight() {
+    function printTotalWeight(sumOfWeightSelectedOptions) {
         const cake = document.querySelector(".spollers-constructor-main__cake input:checked"), cream = document.querySelector(".spollers-constructor-main__cream input:checked"), totalWeight = document.querySelector(".total-constructor-main__weight"), totalWeightPopup = document.querySelector(".total-form-popup__weight");
         const cakeWeight = Number(cake.dataset.weight), creamWeight = Number(cream.dataset.weight);
-        totalWeight.innerHTML = `${(cakeWeight + creamWeight).toFixed(2)} кг.`;
-        totalWeightPopup.innerHTML = `${(cakeWeight + creamWeight).toFixed(2)} кг.`;
+        totalWeight.innerHTML = `${(cakeWeight + creamWeight + sumOfWeightSelectedOptions).toFixed(2)} кг.`;
+        totalWeightPopup.innerHTML = `${(cakeWeight + creamWeight + sumOfWeightSelectedOptions).toFixed(2)} кг.`;
     }
     !function(e, t) {
         "object" == typeof exports && "object" == typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define([], t) : "object" == typeof exports ? exports.datepicker = t() : e.datepicker = t();
