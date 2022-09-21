@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220905145016">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220921224658">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,26 @@
 
 <body>
 	<div class="wrapper">
+		<section class="main__preloader">
+			<div class="preloader">
+				<div class="preloader__loader">
+					<div class="lds-spinner">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<header class="header">
 			<div class="header__container">
 				<div class="header__top">
@@ -43,34 +63,23 @@
 						<div class="hero-header__body">
 							<h1 class="hero-header__title">В шоколаде</h1>
 							<div class="hero-header__social social-hero-header">
-								<a href="https://vk.com/club215439538" class="social-hero-header__item _icon-vk"
-									target="_blank"></a>
-								<a href="http://instagram.com/natasha_kuznetsova?utm_source=qr"
-									class="social-hero-header__item _icon-instagram" target="_blank"></a>
+								<a href="https://vk.com/club215439538" class="social-hero-header__item _icon-vk" target="_blank"></a>
+								<a href="http://instagram.com/natasha_kuznetsova?utm_source=qr" class="social-hero-header__item _icon-instagram" target="_blank"></a>
 							</div>
-							<button class="hero-header__button _icon-arrow-down" type="button" , data-goto=".main__products" ,
-								data-goto-speed="800"></button>
+							<button class="hero-header__button _icon-arrow-down" type="button" , data-goto=".main__products" , data-goto-speed="800"></button>
 						</div>
 					</div>
 				</section>
 			</div>
 		</header>
 		<main class="main">
-			<section class="main__products products-main">
+			<section class="main__products products-main" id="main-products">
 				<div class="products-main__container">
 					<div class="products-main__title title">Торты</div>
 					<div class="products-main__wrapper">
 						<div class="products-main__item item-products-main">
-							<a href="#" data-popup="#popup-product-1"
-								class="item-products-main__image item-products-main__image-ibg">
-								<picture>
-									<source data-srcset="img/products/1.webp"
-										srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-										type="image/webp"><img
-										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-										data-src="img/products/1.jpg" src="img/null.png" alt="Красный бархат"
-										class="item-products-main__picture">
-								</picture>
+							<a href="red-velvet.html" class="item-products-main__image item-products-main__image-ibg" target="_blank">
+								<picture><source data-srcset="img/products/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/1.jpg" src="img/null.png" alt="Красный бархат" class="item-products-main__picture"></picture>
 							</a>
 							<div class="item-products-main__body">
 								<h3 class="item-products-main__title">Красный бархат</h3>
@@ -80,22 +89,13 @@
 								</div>
 								<div class="item-products-main__buy">
 									<div class="item-products-main__price">3 500 руб.</div>
-									<button type="button" class="item-products-main__more _icon-arrow-forward btn"
-										data-popup="#popup-product-1">Подробнее</button>
+									<a href="red-velvet.html" class="item-products-main__more _icon-arrow-forward btn" target="_blank">Подробнее</a>
 								</div>
 							</div>
 						</div>
 						<div class="products-main__item item-products-main">
-							<a href="#" data-popup="#popup-product-2"
-								class="item-products-main__image item-products-main__image-ibg">
-								<picture>
-									<source data-srcset="img/products/2.webp"
-										srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-										type="image/webp"><img
-										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-										data-src="img/products/2.jpg" src="img/null.png" alt="Белый торт с крем-чиз"
-										class="item-products-main__picture">
-								</picture>
+							<a href="cream-cheese.html" class="item-products-main__image item-products-main__image-ibg">
+								<picture><source data-srcset="img/products/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/2.jpg" src="img/null.png" alt="Белый торт с крем-чиз" class="item-products-main__picture"></picture>
 							</a>
 							<div class="item-products-main__body">
 								<h3 class="item-products-main__title">Классический с крем-чиз</h3>
@@ -104,22 +104,13 @@
 								</div>
 								<div class="item-products-main__buy">
 									<div class="item-products-main__price">2 800 руб.</div>
-									<button type="button" class="item-products-main__more _icon-arrow-forward btn"
-										data-popup="#popup-product-2">Подробнее</button>
+									<a href="cream-cheese.html" class="item-products-main__more _icon-arrow-forward btn">Подробнее</a>
 								</div>
 							</div>
 						</div>
 						<div class="products-main__item item-products-main">
-							<a href="#" data-popup="#popup-product-3"
-								class="item-products-main__image item-products-main__image-ibg">
-								<picture>
-									<source data-srcset="img/products/3.webp"
-										srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-										type="image/webp"><img
-										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-										data-src="img/products/3.jpg" src="img/null.png" alt="Чизкейк"
-										class="item-products-main__picture">
-								</picture>
+							<a href="cheesecake.html" class="item-products-main__image item-products-main__image-ibg">
+								<picture><source data-srcset="img/products/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/3.jpg" src="img/null.png" alt="Чизкейк" class="item-products-main__picture"></picture>
 							</a>
 							<div class="item-products-main__body">
 								<h3 class="item-products-main__title">Чизкейк</h3>
@@ -128,22 +119,13 @@
 								</div>
 								<div class="item-products-main__buy">
 									<div class="item-products-main__price">2 500 руб.</div>
-									<button type="button" class="item-products-main__more _icon-arrow-forward btn"
-										data-popup="#popup-product-3">Подробнее</button>
+									<a href="cheesecake.html" class="item-products-main__more _icon-arrow-forward btn">Подробнее</a>
 								</div>
 							</div>
 						</div>
 						<div class="products-main__item item-products-main">
-							<a href="#" data-popup="#popup-product-4"
-								class="item-products-main__image item-products-main__image-ibg">
-								<picture>
-									<source data-srcset="img/products/4.webp"
-										srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-										type="image/webp"><img
-										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-										data-src="img/products/4.jpg" src="img/null.png" alt="Три шоколада"
-										class="item-products-main__picture">
-								</picture>
+							<a href="three-chocolates.html" class="item-products-main__image item-products-main__image-ibg">
+								<picture><source data-srcset="img/products/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/4.jpg" src="img/null.png" alt="Три шоколада" class="item-products-main__picture"></picture>
 							</a>
 							<div class="item-products-main__body">
 								<h3 class="item-products-main__title">Три шоколада</h3>
@@ -152,22 +134,13 @@
 								</div>
 								<div class="item-products-main__buy">
 									<div class="item-products-main__price">2 000 руб.</div>
-									<button type="button" class="item-products-main__more _icon-arrow-forward btn"
-										data-popup="#popup-product-4">Подробнее</button>
+									<a href="three-chocolates.html" class="item-products-main__more _icon-arrow-forward btn">Подробнее</a>
 								</div>
 							</div>
 						</div>
 						<div class="products-main__item item-products-main">
-							<a href="#" data-popup="#popup-product-5"
-								class="item-products-main__image item-products-main__image-ibg">
-								<picture>
-									<source data-srcset="img/products/5.webp"
-										srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-										type="image/webp"><img
-										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-										data-src="img/products/5.jpg" src="img/null.png" alt="Морковный торт"
-										class="item-products-main__picture">
-								</picture>
+							<a href="carrot-cake.html" class="item-products-main__image item-products-main__image-ibg">
+								<picture><source data-srcset="img/products/5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/5.jpg" src="img/null.png" alt="Морковный торт" class="item-products-main__picture"></picture>
 							</a>
 							<div class="item-products-main__body">
 								<h3 class="item-products-main__title">Морковный торт</h3>
@@ -176,22 +149,13 @@
 								</div>
 								<div class="item-products-main__buy">
 									<div class="item-products-main__price">2 000 руб.</div>
-									<button type="button" class="item-products-main__more _icon-arrow-forward btn"
-										data-popup="#popup-product-5">Подробнее</button>
+									<a href="carrot-cake.html" class="item-products-main__more _icon-arrow-forward btn">Подробнее</a>
 								</div>
 							</div>
 						</div>
 						<div class="products-main__item item-products-main">
-							<a href="#" data-popup="#popup-product-6"
-								class="item-products-main__image item-products-main__image-ibg">
-								<picture>
-									<source data-srcset="img/products/6.webp"
-										srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-										type="image/webp"><img
-										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-										data-src="img/products/6.jpg" src="img/null.png" alt="Панчо"
-										class="item-products-main__picture">
-								</picture>
+							<a href="pancho.html" class="item-products-main__image item-products-main__image-ibg">
+								<picture><source data-srcset="img/products/6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/6.jpg" src="img/null.png" alt="Панчо" class="item-products-main__picture"></picture>
 							</a>
 							<div class="item-products-main__body">
 								<h3 class="item-products-main__title">Панчо</h3>
@@ -200,22 +164,13 @@
 								</div>
 								<div class="item-products-main__buy">
 									<div class="item-products-main__price">2 500 руб.</div>
-									<button type="button" class="item-products-main__more _icon-arrow-forward btn"
-										data-popup="#popup-product-6">Подробнее</button>
+									<a href="pancho.html" class="item-products-main__more _icon-arrow-forward btn">Подробнее</a>
 								</div>
 							</div>
 						</div>
 						<div class="products-main__item item-products-main">
-							<a href="#" data-popup="#popup-product-7"
-								class="item-products-main__image item-products-main__image-ibg">
-								<picture>
-									<source data-srcset="img/products/7.webp"
-										srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-										type="image/webp"><img
-										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-										data-src="img/products/7.jpg" src="img/null.png" alt="Сникерс"
-										class="item-products-main__picture">
-								</picture>
+							<a href="snickers.html" class="item-products-main__image item-products-main__image-ibg">
+								<picture><source data-srcset="img/products/7.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/7.jpg" src="img/null.png" alt="Сникерс" class="item-products-main__picture"></picture>
 							</a>
 							<div class="item-products-main__body">
 								<h3 class="item-products-main__title">Сникерс</h3>
@@ -224,22 +179,13 @@
 								</div>
 								<div class="item-products-main__buy">
 									<div class="item-products-main__price">2 500 руб.</div>
-									<button type="button" class="item-products-main__more _icon-arrow-forward btn"
-										data-popup="#popup-product-7">Подробнее</button>
+									<a href="snickers.html" class="item-products-main__more _icon-arrow-forward btn">Подробнее</a>
 								</div>
 							</div>
 						</div>
 						<div class="products-main__item item-products-main">
-							<a href="#" data-popup="#popup-product-8"
-								class="item-products-main__image item-products-main__image-ibg">
-								<picture>
-									<source data-srcset="img/products/8.webp"
-										srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-										type="image/webp"><img
-										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-										data-src="img/products/8.jpg" src="img/null.png" alt="Тёмный лес"
-										class="item-products-main__picture">
-								</picture>
+							<a href="dark-forest.html" class="item-products-main__image item-products-main__image-ibg">
+								<picture><source data-srcset="img/products/8.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/products/8.jpg" src="img/null.png" alt="Тёмный лес" class="item-products-main__picture"></picture>
 							</a>
 							<div class="item-products-main__body">
 								<h3 class="item-products-main__title">Тёмный лес</h3>
@@ -248,8 +194,7 @@
 								</div>
 								<div class="item-products-main__buy">
 									<div class="item-products-main__price">3 000 руб.</div>
-									<button type="button" class="item-products-main__more _icon-arrow-forward btn"
-										data-popup="#popup-product-8">Подробнее</button>
+									<a href="dark-forest.html" class="item-products-main__more _icon-arrow-forward btn">Подробнее</a>
 								</div>
 							</div>
 						</div>
@@ -258,12 +203,9 @@
 				</div>
 
 			</section>
-			<section class="main__constructor constructor-main">
+			<section class="main__constructor constructor-main" id="main-constructor">
 				<div class="constructor-main__background-ibg">
-					<picture>
-						<source srcset="img/bg-constructor.webp" type="image/webp"><img src="img/bg-constructor.jpg"
-							alt="Торты" class="constructor-main__image">
-					</picture>
+					<picture><source srcset="img/bg-constructor.webp" type="image/webp"><img src="img/bg-constructor.jpg" alt="Торты" class="constructor-main__image"></picture>
 				</div>
 				<div class="constructor-main__body">
 					<div class="constructor-main__container">
@@ -275,121 +217,79 @@
 									<div class="spollers-constructor-main__body">
 										<div class="spollers-constructor-main__button">
 											<div class="spollers-constructor-main__picture-ibg">
-												<picture>
-													<source srcset="img/constructor/chokolate-cake.webp" type="image/webp"><img
-														src="img/constructor/chokolate-cake.jpg" alt="Шоколадный торт">
-												</picture>
+												<picture><source srcset="img/constructor/chokolate-cake.webp" type="image/webp"><img src="img/constructor/chokolate-cake.jpg" alt="Шоколадный"></picture>
 											</div>
-											<input type="radio" id="chocolate-cake" value="chocolate-cake" name="cake"
-												class="spollers-constructor-main__btn" data-price="248" data-weight="1.48">
+											<input type="radio" id="chocolate-cake" value="Шоколадный бисквит" name="cake" class="spollers-constructor-main__btn" data-price="268" data-weight="1.48">
 											<label for="chocolate-cake" class="spollers-constructor-main__label">Шоколадный</label>
 										</div>
 										<div class="spollers-constructor-main__button">
 											<div class="spollers-constructor-main__picture-ibg">
-												<picture>
-													<source srcset="img/constructor/cream-cake.webp" type="image/webp"><img
-														src="img/constructor/cream-cake.jpg" alt="Шоколадный торт">
-												</picture>
+												<picture><source srcset="img/constructor/cream-cake.webp" type="image/webp"><img src="img/constructor/cream-cake.jpg" alt="Сливочный"></picture>
 											</div>
-											<input type="radio" id="creamy-cake" value="creamy-cake" name="cake"
-												class="spollers-constructor-main__btn" data-price="162" data-weight="1.232">
+											<input type="radio" id="creamy-cake" value="Сливочный бисквит" name="cake" class="spollers-constructor-main__btn" data-price="162" data-weight="1.232">
 											<label for="creamy-cake" class="spollers-constructor-main__label">Сливочный</label>
 										</div>
 										<div class="spollers-constructor-main__button">
 											<div class="spollers-constructor-main__picture-ibg">
-												<picture>
-													<source srcset="img/constructor/red-cake.webp" type="image/webp"><img
-														src="img/constructor/red-cake.jpg" alt="Шоколадный торт">
-												</picture>
+												<picture><source srcset="img/constructor/red-cake.webp" type="image/webp"><img src="img/constructor/red-cake.jpg" alt="Красный бархат"></picture>
 											</div>
-											<input type="radio" id="red-velvet-cake" value="red-velvet-cake" name="cake"
-												class="spollers-constructor-main__btn" data-price="326" data-weight="1.365">
+											<input type="radio" id="red-velvet-cake" value="Бисквит Красный бархат" name="cake" class="spollers-constructor-main__btn" data-price="326" data-weight="1.365">
 											<label for="red-velvet-cake" class="spollers-constructor-main__label">Красный
 												бархат</label>
 										</div>
 										<div class="spollers-constructor-main__button">
 											<div class="spollers-constructor-main__picture-ibg">
-												<picture>
-													<source srcset="img/constructor/coffee-cake.webp" type="image/webp"><img
-														src="img/constructor/coffee-cake.jpg" alt="Шоколадный торт">
-												</picture>
+												<picture><source srcset="img/constructor/coffee-cake.webp" type="image/webp"><img src="img/constructor/coffee-cake.jpg" alt="Панчо"></picture>
 											</div>
-											<input type="radio" id="coffee-cake" value="coffee-cake" name="cake"
-												class="spollers-constructor-main__btn" data-price="188" data-weight="1.01">
+											<input type="radio" id="coffee-cake" value="Бисквит панчо(кофе)" name="cake" class="spollers-constructor-main__btn" data-price="188" data-weight="1.01">
 											<label for="coffee-cake" class="spollers-constructor-main__label">Панчо(кофе)</label>
 										</div>
 									</div>
 								</div>
 								<div class="spollers-constructor-main__cream">
-									<button class="spollers-constructor-main__subtitle" type="button"
-										data-spoller>Прослойка</button>
+									<button class="spollers-constructor-main__subtitle" type="button" data-spoller>Начинка</button>
 									<div class="spollers-constructor-main__body">
 										<div class="spollers-constructor-main__button">
 											<div class="spollers-constructor-main__picture-ibg">
-												<picture>
-													<source srcset="img/constructor/pancho-cream.webp" type="image/webp"><img
-														src="img/constructor/pancho-cream.jpg" alt="Шоколадный торт">
-												</picture>
+												<picture><source srcset="img/constructor/pancho-cream.webp" type="image/webp"><img src="img/constructor/pancho-cream.jpg" alt="Панчо"></picture>
 											</div>
-											<input type="radio" id="pancho-cream" value="pancho-cream" name="cream"
-												class="spollers-constructor-main__btn" data-price="375" data-weight="0.83">
-											<label for="pancho-cream" class="spollers-constructor-main__label">Панчо</label>
+											<input type="radio" id="pancho-cream" value="Сметанная начинка" name="cream" class="spollers-constructor-main__btn" data-price="375" data-weight="0.83">
+											<label for="pancho-cream" class="spollers-constructor-main__label">Сметанная</label>
 										</div>
 										<div class="spollers-constructor-main__button">
 											<div class="spollers-constructor-main__picture-ibg">
-												<picture>
-													<source srcset="img/constructor/coffee-cream.webp" type="image/webp"><img
-														src="img/constructor/coffee-cream.jpg" alt="Шоколадный торт">
-												</picture>
+												<picture><source srcset="img/constructor/coffee-cream.webp" type="image/webp"><img src="img/constructor/coffee-cream.jpg" alt="Кофейный"></picture>
 											</div>
-											<input type="radio" id="coffee-cream" value="coffee-cream" name="cream"
-												class="spollers-constructor-main__btn" data-price="460" data-weight="0.676">
-											<label for="coffee-cream" class="spollers-constructor-main__label">Кофейный</label>
+											<input type="radio" id="coffee-cream" value="Кофейная начинка" name="cream" class="spollers-constructor-main__btn" data-price="460" data-weight="0.676">
+											<label for="coffee-cream" class="spollers-constructor-main__label">Кофейная</label>
 										</div>
 										<div class="spollers-constructor-main__button">
 											<div class="spollers-constructor-main__picture-ibg">
-												<picture>
-													<source srcset="img/constructor/butter-cream.webp" type="image/webp"><img
-														src="img/constructor/butter-cream.jpg" alt="Шоколадный торт">
-												</picture>
+												<picture><source srcset="img/constructor/butter-cream.webp" type="image/webp"><img src="img/constructor/butter-cream.jpg" alt="Крем-чиз"></picture>
 											</div>
-											<input type="radio" id="butter-cream" value="butter-cream" name="cream"
-												class="spollers-constructor-main__btn" data-price="553" data-weight="1.1">
+											<input type="radio" id="butter-cream" value="Начинка из крем-чиз" name="cream" class="spollers-constructor-main__btn" data-price="409" data-weight="0.52">
 											<label for="butter-cream" class="spollers-constructor-main__label">Крем-чиз</label>
 										</div>
 										<div class="spollers-constructor-main__button">
 											<div class="spollers-constructor-main__picture-ibg">
-												<picture>
-													<source srcset="img/constructor/choсolate-cream.webp" type="image/webp"><img
-														src="img/constructor/choсolate-cream.jpg" alt="Шоколадный торт">
-												</picture>
+												<picture><source srcset="img/constructor/choсolate-cream.webp" type="image/webp"><img src="img/constructor/choсolate-cream.jpg" alt="Шоколадный"></picture>
 											</div>
-											<input type="radio" id="chocolate-cream" value="chocolate-cream" name="cream"
-												class="spollers-constructor-main__btn" data-price="742" data-weight="1.1">
-											<label for="chocolate-cream"
-												class="spollers-constructor-main__label">Шоколадный</label>
+											<input type="radio" id="chocolate-cream" value="Шоколадная начинка" name="cream" class="spollers-constructor-main__btn" data-price="531" data-weight="0.55">
+											<label for="chocolate-cream" class="spollers-constructor-main__label">Шоколадная</label>
 										</div>
 										<div class="spollers-constructor-main__button">
 											<div class="spollers-constructor-main__picture-ibg">
-												<picture>
-													<source srcset="img/constructor/vanilla-cream.webp" type="image/webp"><img
-														src="img/constructor/vanilla-cream.jpg" alt="Шоколадный торт">
-												</picture>
+												<picture><source srcset="img/constructor/vanilla-cream.webp" type="image/webp"><img src="img/constructor/vanilla-cream.jpg" alt="Сливочный"></picture>
 											</div>
-											<input type="radio" id="vanilla-cream" value="vanilla-cream" name="cream"
-												class="spollers-constructor-main__btn" data-price="659" data-weight="1.92">
-											<label for="vanilla-cream" class="spollers-constructor-main__label">Сливочный</label>
+											<input type="radio" id="vanilla-cream" value="Сливочная начинка" name="cream" class="spollers-constructor-main__btn" data-price="520" data-weight="0.55">
+											<label for="vanilla-cream" class="spollers-constructor-main__label">Сливочная</label>
 										</div>
 										<div class="spollers-constructor-main__button">
 											<div class="spollers-constructor-main__picture-ibg">
-												<picture>
-													<source srcset="img/constructor/yogurt-cream.webp" type="image/webp"><img
-														src="img/constructor/yogurt-cream.jpg" alt="Шоколадный торт">
-												</picture>
+												<picture><source srcset="img/constructor/yogurt-cream.webp" type="image/webp"><img src="img/constructor/yogurt-cream.jpg" alt="Йогуртовый"></picture>
 											</div>
-											<input type="radio" id="yoghurt-cream" value="yoghurt-cream" name="cream"
-												class="spollers-constructor-main__btn" data-price="330" data-weight="0.86">
-											<label for="yoghurt-cream" class="spollers-constructor-main__label">Йогуртовый</label>
+											<input type="radio" id="yoghurt-cream" value="Йогуртовая начинка" name="cream" class="spollers-constructor-main__btn" data-price="330" data-weight="0.86">
+											<label for="yoghurt-cream" class="spollers-constructor-main__label">Йогуртовая</label>
 										</div>
 									</div>
 								</div>
@@ -397,12 +297,10 @@
 							<div class="constructor-main__decor">
 								<div class="construcror-main__spollers spollers-constructor-main" data-spollers="991.98">
 									<div class="spollers-constructor-main__item">
-										<button class="spollers-constructor-main__subtitle" type="button"
-											data-spoller>Оформление</button>
+										<button class="spollers-constructor-main__subtitle" type="button" data-spoller>Оформление</button>
 										<div class="spollers-constructor-main__body">
 											<select name="cream" class="spollers-constructor-main__select">
-												<option class="spollers-constructor-main__option" value="" data-price="0"
-													data-weight="0">
+												<option class="spollers-constructor-main__option" value="" data-price="0" data-weight="0">
 													Крем-чиз
 												</option>
 												<option class="spollers-constructor-main__option" value="Крем-чиз
@@ -419,8 +317,7 @@
 													Красный
 													Крем-чиз
 												</option>
-												<option class="spollers-constructor-main__option" value="Оранжевый Крем-чиз"
-													data-price="250" data-weight="0.73">
+												<option class="spollers-constructor-main__option" value="Оранжевый Крем-чиз" data-price="250" data-weight="0.73">
 													Оранжевый Крем-чиз
 												</option>
 												<option class="spollers-constructor-main__option" value="Желтый
@@ -436,8 +333,7 @@
 												Крем-чиз" data-price="250" data-weight="0.73">
 													Синий
 													Крем-чиз</option>
-												<option class="spollers-constructor-main__option" value="Фиолетовый Крем-чиз"
-													data-price="250">
+												<option class="spollers-constructor-main__option" value="Фиолетовый Крем-чиз" data-price="250" data-weight="0.73">
 													Фиолетовый Крем-чиз
 												</option>
 												<option class="spollers-constructor-main__option" value="Черный
@@ -449,14 +345,12 @@
 													Золотой
 													Крем-чиз
 												</option>
-												<option class="spollers-constructor-main__option" value="Серебряный Крем-чиз"
-													data-price="250" data-weight="0.73">
+												<option class="spollers-constructor-main__option" value="Серебряный Крем-чиз" data-price="250" data-weight="0.73">
 													Серебряный Крем-чиз
 												</option>
 											</select>
 											<select name="chocolate" class="spollers-constructor-main__select">
-												<option class="spollers-constructor-main__option" value="" data-price="0"
-													data-weight="0">
+												<option class="spollers-constructor-main__option" value="" data-price="0" data-weight="0">
 													Шоколад
 												</option>
 												<option class="spollers-constructor-main__option" value="Шоколад
@@ -472,14 +366,12 @@
 												шоколад" data-price="150" data-weight="0.09">
 													Темный
 													шоколад</option>
-												<option class="spollers-constructor-main__option" value="Молочный шоколад"
-													data-price="150" data-weight="0.09">
+												<option class="spollers-constructor-main__option" value="Молочный шоколад" data-price="150" data-weight="0.09">
 													Молочный шоколад
 												</option>
 											</select>
 											<select name="mastic" class="spollers-constructor-main__select">
-												<option class="spollers-constructor-main__option" value="" data-price="0"
-													data-weight="0">
+												<option class="spollers-constructor-main__option" value="" data-price="0" data-weight="0">
 													Мастика
 												</option>
 												<option class="spollers-constructor-main__option" value="Мастика
@@ -495,8 +387,7 @@
 												мастика" data-price="600" data-weight="1.6">
 													Красная
 													мастика</option>
-												<option class="spollers-constructor-main__option" value="Оранжевая мастика"
-													data-price="600" data-weight="1.6">
+												<option class="spollers-constructor-main__option" value="Оранжевая мастика" data-price="600" data-weight="1.6">
 													Оранжевая мастика
 												</option>
 												<option class="spollers-constructor-main__option" value="Желтая
@@ -511,8 +402,7 @@
 												мастика" data-price="600" data-weight="1.6">
 													Синяя
 													мастика</option>
-												<option class="spollers-constructor-main__option" value="Фиолетовая мастика"
-													data-price="600" data-weight="1.6">
+												<option class="spollers-constructor-main__option" value="Фиолетовая мастика" data-price="600" data-weight="1.6">
 													Фиолетовая мастика
 												</option>
 												<option class="spollers-constructor-main__option" value="Черная
@@ -523,8 +413,7 @@
 												мастика" data-price="600" data-weight="1.6">
 													Золотая
 													мастика</option>
-												<option class="spollers-constructor-main__option" value="Серебряная мастика"
-													data-price="600" data-weight="1.6">
+												<option class="spollers-constructor-main__option" value="Серебряная мастика" data-price="600" data-weight="1.6">
 													Серебряная мастика
 												</option>
 											</select>
@@ -533,32 +422,28 @@
 								</div>
 								<div class="construcror-main__spollers spollers-constructor-main" data-spollers="991.98">
 									<div class="spollers-constructor-main__item">
-										<button class="spollers-constructor-main__subtitle" type="button"
-											data-spoller>Добавить</button>
+										<button class="spollers-constructor-main__subtitle" type="button" data-spoller>Добавить</button>
 										<div class="spollers-constructor-main__body">
 											<div class="spollers-constructor-main__choice">
-												<input type="checkbox" class="spollers-constructor-main__checkbox" id="paper"
-													data-price="500">
+												<input type="checkbox" class="spollers-constructor-main__checkbox" id="paper" data-price="500" value="Топперы из мастики">
 												<label for="paper" class="spollers-constructor-main__label">Топперы из
 													мастики <a href="#" class="spollers-constructor-main__more" data-popup="#topper">
 														(см.
 														варианты)</a></label>
 											</div>
 											<div class="spollers-constructor-main__choice">
-												<input type="checkbox" class="spollers-constructor-main__checkbox" id="topping"
-													data-price="100">
+												<input type="checkbox" class="spollers-constructor-main__checkbox" id="topping" data-price="100" value="Кондитерская посыпка для торта">
 												<label for="topping" class="spollers-constructor-main__label">Кондитерская
 													посыпка
 													для торта</label>
 											</div>
 											<div class="spollers-constructor-main__choice">
-												<input type="checkbox" class="spollers-constructor-main__checkbox" id="marshmallow"
-													data-price="150">
+												<input type="checkbox" class="spollers-constructor-main__checkbox" id="marshmallow" data-price="150" value="Маршмеллоу">
 												<label for="marshmallow" class="spollers-constructor-main__label">Маршмэллоу</label>
 											</div>
 											<div class="spollers-constructor-main__choice">
 												<input type="checkbox" class="spollers-constructor-main__checkbox" id="
-												lollipops" data-price="150">
+												lollipops" data-price="150" value="Леденцы на палочке">
 												<label for="
 												lollipops" class="spollers-constructor-main__label">Леденцы на
 													палочке</label>
@@ -573,35 +458,24 @@
 														Не
 														надо конфет
 													</option>
-													<option class="spollers-constructor-main__option" value="Дольки шоколада"
-														data-price="100">
+													<option class="spollers-constructor-main__option" value="Дольки шоколада" data-price="100">
 														Дольки шоколада
 													</option>
-													<option class="spollers-constructor-main__option" value="KitKat"
-														data-price="200">
+													<option class="spollers-constructor-main__option" value="KitKat" data-price="200">
 														KitKat</option>
-													<option class="spollers-constructor-main__option" value="Snickers"
-														data-price="200">
+													<option class="spollers-constructor-main__option" value="Snickers" data-price="200">
 														Snickers</option>
 													<option class="spollers-constructor-main__option" value="M&M’s" data-price="100">
 														M&M’s</option>
-													<option class="spollers-constructor-main__option" value="Raffaello"
-														data-price="300">
+													<option class="spollers-constructor-main__option" value="Raffaello" data-price="300">
 														Raffaello</option>
-													<option class="spollers-constructor-main__option" value="Ferrero Rocher"
-														data-price="400">
+													<option class="spollers-constructor-main__option" value="Ferrero Rocher" data-price="400">
 														Ferrero Rocher
 													</option>
 													<option class="spollers-constructor-main__option" value="Merci" data-price="500">
 														Merci</option>
-													<option class="spollers-constructor-main__option" value="Toffifee"
-														data-price="300">
+													<option class="spollers-constructor-main__option" value="Toffifee" data-price="300">
 														Toffifee</option>
-													<option class="spollers-constructor-main__option" value="Шоколадные шарики"
-														data-price="80">
-														Шоколадные шарики с
-														нежным бисквитом внутри (диаметр 4 см.)
-													</option>
 												</select>
 											</div>
 											<div class="spollers-constructor-main__choice">
@@ -618,11 +492,9 @@
 													<option class="spollers-constructor-main__option" value="Орео" data-price="200">
 														Орео
 													</option>
-													<option class="spollers-constructor-main__option" value="Грибочки"
-														data-price="150">
+													<option class="spollers-constructor-main__option" value="Грибочки" data-price="150">
 														Грибочки</option>
-													<option class="spollers-constructor-main__option" value="Малютки"
-														data-price="150">
+													<option class="spollers-constructor-main__option" value="Малютки" data-price="150">
 														Малютки</option>
 												</select>
 											</div>
@@ -640,14 +512,11 @@
 													<option class="spollers-constructor-main__option" value="Киви" data-price="500">
 														Киви
 													</option>
-													<option class="spollers-constructor-main__option" value="Черника"
-														data-price="500">
+													<option class="spollers-constructor-main__option" value="Черника" data-price="500">
 														Черника</option>
-													<option class="spollers-constructor-main__option" value="Клубника"
-														data-price="500">
+													<option class="spollers-constructor-main__option" value="Клубника" data-price="500">
 														Клубника</option>
-													<option class="spollers-constructor-main__option" value="Малина"
-														data-price="500">
+													<option class="spollers-constructor-main__option" value="Малина" data-price="500">
 														Малина</option>
 													<option class="spollers-constructor-main__option" value="Консервированные
 													ананасы" data-price="200">
@@ -658,8 +527,7 @@
 														Консервированные
 														персики
 													</option>
-													<option class="spollers-constructor-main__option" value="Замороженная вишня"
-														data-price="300">
+													<option class="spollers-constructor-main__option" value="Замороженная вишня" data-price="300">
 														Замороженная вишня
 													</option>
 												</select>
@@ -677,32 +545,26 @@
 														надо орехов и
 														сухофруктов
 													</option>
-													<option class="spollers-constructor-main__option" value="Фундук"
-														data-price="200">
+													<option class="spollers-constructor-main__option" value="Фундук" data-price="200">
 														Фундук
 													</option>
 													<option class="spollers-constructor-main__option" value="Кешью" data-price="350">
 														Кешью</option>
-													<option class="spollers-constructor-main__option" value="Грецкие орехи"
-														data-price="300">
+													<option class="spollers-constructor-main__option" value="Грецкие орехи" data-price="300">
 														Грецкие орехи
 													</option>
-													<option class="spollers-constructor-main__option" value="Арахис"
-														data-price="100">
+													<option class="spollers-constructor-main__option" value="Арахис" data-price="100">
 														Арахис</option>
-													<option class="spollers-constructor-main__option" value="Миндаль"
-														data-price="350">
+													<option class="spollers-constructor-main__option" value="Миндаль" data-price="350">
 														Миндаль
 													</option>
 													<option class="spollers-constructor-main__option" value="Изюм" data-price="200">
 														Изюм
 													</option>
-													<option class="spollers-constructor-main__option" value="Чернослив"
-														data-price="200">
+													<option class="spollers-constructor-main__option" value="Чернослив" data-price="200">
 														Чернослив
 													</option>
-													<option class="spollers-constructor-main__option" value="Курага"
-														data-price="100">
+													<option class="spollers-constructor-main__option" value="Курага" data-price="100">
 														Курага
 													</option>
 												</select>
@@ -722,7 +584,7 @@
 									</div>
 									<div class="total-constructor-main__buttons">
 										<button class="total-constructor-main__calculate btn">Расчитать</button>
-										<button class="total-constructor-main__order btn" data-popup="#popup">Заказать</button>
+										<button class="total-constructor-main__order btn" data-popup="#order">Заказать</button>
 									</div>
 								</div>
 							</div>
@@ -734,9 +596,12 @@
 			<section class="main__comments comments-main">
 				<div class="comments-main__container">
 					<h2 class="comments-main__title title">Напишите нам свое мнение:</h2>
-					<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168&_v=20220905145016"></script>
+					<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168&_v=20220921224658"></script>
 					<script type="text/javascript">
-						VK.init({ apiId: 51407949, onlyWidgets: true });
+						VK.init({
+							apiId: 51407949,
+							onlyWidgets: true
+						});
 					</script>
 
 					<!-- Put this div tag to the place, where the Comments block will be -->
@@ -748,29 +613,7 @@
 						});
 					</script>
 				</div>
-
 			</section>
-			<section class="main__preloader">
-				<div class="preloader">
-					<div class="preloader__loader">
-						<div class="lds-spinner">
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-						</div>
-					</div>
-				</div>
-			</section>
-
 		</main>
 		<footer class="footer">
 			<div class="footer__container _container">
@@ -786,31 +629,27 @@
 							<a href="tel:89111874412" class="footer__phone">8-911-187-44-12</a>
 						</div>
 						<div class="footer__item">
-							<button class="footer__call _icon-phone btn" data-popup="#callback">Заказать обратный
-								звонок</button>
+							<button class="footer__call _icon-phone btn" data-popup="#callback">Заказать обратный звонок</button>
 						</div>
 					</div>
 					<div class="footer__column footer__column_right">
 						<div class="footer__item">
 							<p class="footer__text">
-								Вы можете забрать тортик бесплатно по адресу: г. Санкт-Петербург, Витебский проспект, д. 77 или
-								мы
+								Вы можете забрать тортик бесплатно по адресу: г. Санкт-Петербург, Витебский проспект, д. 77 или мы
 								сами
-								доставим его по любому удобному адресу. Подробнее с условиями доставки можно ознакомиться <a
-									href="#" data-popup="#delivery">здесь</a>
+								доставим его по любому удобному адресу. Подробнее с условиями доставки можно ознакомиться <a href="#" data-popup="#delivery">здесь</a>
 							</p>
 						</div>
 						<div class="footer__social">
 							<a href="https://vk.com/club215439538" class="footer__vk _icon-vk" target="_blank"></a>
-							<a href="http://instagram.com/natasha_kuznetsova?utm_source=qr"
-								class="footer__insta _icon-instagram" target="_blank"></a>
+							<a href="http://instagram.com/natasha_kuznetsova?utm_source=qr" class="footer__insta _icon-instagram" target="_blank"></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
 	</div>
-	<div id="popup" aria-hidden="true" class="popup">
+	<div id="order" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
 				<button data-close type="button" class="popup__close"></button>
@@ -819,20 +658,15 @@
 						<h2 class="form-popup__title">Ваш заказ</h2>
 						<div class="form-popup__item">
 							<!--<label for="formName" class="form-popup__label">Имя*</label>-->
-							<input type="text" id="formName" name="name" class="form-popup__input" placeholder="Имя*"
-								data-required data-error="Введите имя, чтобы мы знали, как к Вам обращаться" autocomplete="off">
+							<input type="text" id="formName" name="Имя" class="form-popup__input" placeholder="Имя*" data-required data-error="Введите имя, чтобы мы знали, как к Вам обращаться" autocomplete="off">
 						</div>
 						<div class="form-popup__item">
 							<!--<label for="formPhone" class="form-popup__label">Телефон*</label>-->
-							<input type="text" id="formPhone" name="phone" class="form-popup__input" data-required
-								data-error="Введите номер телефона, чтобы мы могли связаться с Вами" placeholder="Телефон*"
-								autocomplete="off">
+							<input type="text" id="formPhone" name="Телефон" class="form-popup__input" data-required data-error="Введите номер телефона, чтобы мы могли связаться с Вами" placeholder="Телефон*" autocomplete="off">
 						</div>
 						<div class="form-popup__item">
 							<!--<label for="formAddress" class="form-popup__label">Адрес*</label>-->
-							<input type="text" id="formAddress" name="address" class="form-popup__input" data-required
-								data-error="Введите адрес, чтобы мы знали, куда отправить заказ" placeholder="Адрес*"
-								autocomplete="off">
+							<input type="text" id="formAddress" name="Адрес" class="form-popup__input" data-required data-error="Введите адрес, чтобы мы знали, куда отправить заказ" placeholder="Адрес*" autocomplete="off">
 						</div>
 						<div class="form-popup__item">
 							<div class="form-popup__text">Способ оплаты:</div>
@@ -847,25 +681,14 @@
 							<div class="form-popup__text form-popup__text_small">*заказ нужно сделать минимум за 3 дня до даты
 								доставки</div>
 						</div>
-						<div class="form-popup__delivery">
-							<div class="form-popup__icon _icon-truck"></div>
-							<div class="form-popup__text">Подробнее об условиях доставки можно узнать <a href="#"
-									data-popup="#delivery">здесь</a></div>
-						</div>
-						<div class="form-popup__item">
-							<label for="formComment" class="form-popup__label">Комментарий:</label>
-							<textarea name="comment" id="formComment" class="form-popup__input"></textarea>
-						</div>
-						<div class="form-popup__item">
-							<div class="form-popup__checkbox checkbox-form-popup">
-								<input type="checkbox" id="formAgreement" name="agreement"
-									class="checkbox-form-popup__input form-popup__input" data-required checked>
-								<label for="formAgreement" class="checkbox-form-popup__label"><span>Я даю свое согласие на
-										обработку
-										персональных данных в соответствии с <a href="">Условиями</a>*</span></label>
-							</div>
-						</div>
 						<div class="form-popup__total total-form-popup">
+							<div class="total-form-popup__order">
+								<div class="total-form-popup__text">Состав заказа: </div>
+								<div class="total-form-popup__content total-form-popup__content_cake"></div>
+								<div class="total-form-popup__content total-form-popup__content_cream"></div>
+								<div class="total-form-popup__content total-form-popup__content_select"></div>
+								<div class="total-form-popup__content total-form-popup__content_checkbox"></div>
+							</div>
 							<div class="total-form-popup__item">
 								<div class="total-form-popup__text">Вес торта: </div>
 								<div class="total-form-popup__weight"></div>
@@ -875,412 +698,29 @@
 								<div class="total-form-popup__cost"></div>
 							</div>
 						</div>
-						<button class="form-popup__button btn" type="submit">Оформить заказ</button>
+						<div class="form-popup__delivery">
+							<div class="form-popup__icon _icon-truck"></div>
+							<div class="form-popup__text">Цена указана без учета стоимости доставки. Подробнее об условиях доставки можно узнать <a href="#" data-popup="#delivery">здесь</a></div>
+						</div>
+						<div class="form-popup__item">
+							<label for="formComment" class="form-popup__label">Комментарий:</label>
+							<textarea name="comment" id="formComment" class="form-popup__input"></textarea>
+						</div>
+						<div class="form-popup__item">
+							<div class="form-popup__checkbox checkbox-form-popup">
+								<input type="checkbox" id="formAgreement" name="agreement" class="checkbox-form-popup__input form-popup__input" data-required checked>
+								<label for="formAgreement" class="checkbox-form-popup__label"><span>Я даю свое согласие на
+										обработку
+										персональных данных в соответствии с <a href="">Условиями</a>*</span></label>
+							</div>
+						</div>
+						<input class="form-popup__button btn" type="submit">Оформить заказ</input>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="popups">
-
-		<div id="popup-product-1" aria-hidden="true" class="popup">
-			<div class="popup__wrapper">
-				<div class="popup__content popup-product__content">
-					<button data-close type="button" class="popup__close"></button>
-					<div class="popup-product__body">
-						<div class="popup-product__picture-ibg">
-							<picture>
-								<source data-srcset="img/products/1.webp"
-									srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-									type="image/webp"><img
-									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-									data-src="img/products/1.jpg" src="img/null.png" alt="Красный бархат"
-									class="popup-product__image">
-							</picture>
-						</div>
-						<div class="popup-product__description">
-							<h2 class="popup-product__title title">Красный бархат</h2>
-							<p class="popup-product__consist">
-								<span>Состав:</span> мука, какао, яйца, кефир, сода, рахрыхлитель, соль, масло сливочное, сахар,
-								масло
-								растительное, краситель, сливки, сахарная пудра, сливочный сыр.
-							</p>
-							<div class="popup-product__price">Цена: <span>3 500</span> руб.</div>
-							<div class="popup-product__weight">Вес: <span>2.7 кг.</span></div>
-							<div class="popup-product__delivery delivery-product-popup">
-								<div class="delivery-product-popup__item _icon-clock">Доставим в любое удобное время (доставка
-									осуществляется до 21:00)</div>
-								<div class="delivery-product-popup__item _icon-location">Доставим в любое удобное место
-									(Доставка
-									осуществляется по г. Санкт-Петербург и Лен. области.)</div>
-								<div class="delivery-product-popup__item">
-									<div class="delivery-product-popup__icon _icon-truck"></div>
-									<div class="delivery-product-popup__text">Подробнее об условиях доставки можно узнать <a
-											href="#" data-popup="#delivery">здесь</a></div>
-								</div>
-								<div class="delivery-product-popup__item delivery-product-popup__item_small">*заказ нужно
-									сделать
-									минимум за 3 дня до даты
-									доставки</div>
-								<div class="delivery-product-popup__item delivery-product-popup__item_small">*внешний вид торта
-									может
-									отличаться</div>
-							</div>
-							<button class="popup-product__buy btn" type="button" data-popup="#order-ready">Заказать</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="popup-product-2" aria-hidden="true" class="popup">
-			<div class="popup__wrapper">
-				<div class="popup__content popup-product__content">
-					<button data-close type="button" class="popup__close"></button>
-					<div class="popup-product__body">
-						<div class="popup-product__picture-ibg">
-							<picture>
-								<source data-srcset="img/products/2.webp"
-									srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-									type="image/webp"><img
-									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-									data-src="img/products/2.jpg" src="img/null.png" alt="Белый торт с крем-чиз"
-									class="popup-product__image">
-							</picture>
-						</div>
-						<div class="popup-product__description">
-							<h2 class="popup-product__title title">Классический торт с крем-чиз</h2>
-							<p class="popup-product__consist">
-								<span>Состав:</span> яйца, сахар, мука, кукурузный
-								крахмал, сливки, сахарная пудра, сливочный сыр.
-							</p>
-							<div class="popup-product__price">Цена: <span>2 800</span> руб.</div>
-							<div class="popup-product__weight">Вес: <span>1.9 кг.</span></div>
-							<div class="popup-product__delivery delivery-product-popup">
-								<div class="delivery-product-popup__item _icon-clock">Доставим в любое удобное время (доставка
-									осуществляется до 21:00)</div>
-								<div class="delivery-product-popup__item _icon-location">Доставим в любое удобное место
-									(Доставка
-									осуществляется по г. Санкт-Петербург и Лен. области.)</div>
-								<div class="delivery-product-popup__item">
-									<div class="delivery-product-popup__icon _icon-truck"></div>
-									<div class="delivery-product-popup__text">Подробнее об условиях доставки можно узнать <a
-											href="#" data-popup="#delivery">здесь</a></div>
-								</div>
-								<div class="delivery-product-popup__item delivery-product-popup__item_small">*заказ нужно
-									сделать
-									минимум за 3 дня до даты
-									доставки</div>
-								<div class="delivery-product-popup__item delivery-product-popup__item_small">*внешний вид торта
-									может
-									отличаться</div>
-							</div>
-							<button class="popup-product__buy btn" type="button" data-popup="#order-ready">Заказать</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="popup-product-3" aria-hidden="true" class="popup">
-			<div class="popup__wrapper">
-				<div class="popup__content popup-product__content">
-					<button data-close type="button" class="popup__close"></button>
-					<div class="popup-product__body">
-						<div class="popup-product__picture-ibg">
-							<picture>
-								<source data-srcset="img/products/3.webp"
-									srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-									type="image/webp"><img
-									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-									data-src="img/products/3.jpg" src="img/null.png" alt="Чизкейк" class="popup-product__image">
-							</picture>
-						</div>
-						<div class="popup-product__description">
-							<h2 class="popup-product__title title">Чизкейк</h2>
-							<p class="popup-product__consist">
-								<span>Состав:</span> печенье, масло сливочное, орехи,
-								сливочный сыр, сахарная пудра, сметана, сливки, яйца, крахмал кукурузный, ваниль, сок лимона.
-							</p>
-							<div class="popup-product__price">Цена: 2 500 руб.</div>
-							<div class="popup-product__weight">Вес: <span>1.5 кг.</span></div>
-							<div class="popup-product__delivery delivery-product-popup">
-								<div class="delivery-product-popup__item _icon-clock">Доставим в любое удобное время (доставка
-									осуществляется до 21:00)</div>
-								<div class="delivery-product-popup__item _icon-location">Доставим в любое удобное место
-									(Доставка
-									осуществляется по г. Санкт-Петербург и Лен. области.)</div>
-								<div class="delivery-product-popup__item">
-									<div class="delivery-product-popup__icon _icon-truck"></div>
-									<div class="delivery-product-popup__text">Подробнее об условиях доставки можно узнать <a
-											href="#" data-popup="#delivery">здесь</a></div>
-								</div>
-								<div class="delivery-product-popup__item delivery-product-popup__item_small">*заказ нужно
-									сделать
-									минимум за 3 дня до даты
-									доставки</div>
-								<div class="delivery-product-popup__item delivery-product-popup__item_small">*внешний вид торта
-									может
-									отличаться</div>
-							</div>
-							<button class="popup-product__buy btn" type="button" data-popup="#order-ready">Заказать</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="popup-product-4" aria-hidden="true" class="popup">
-			<div class="popup__wrapper">
-				<div class="popup__content popup-product__content">
-					<button data-close type="button" class="popup__close"></button>
-					<div class="popup-product__body">
-						<div class="popup-product__picture-ibg">
-							<picture>
-								<source data-srcset="img/products/4.webp"
-									srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-									type="image/webp"><img
-									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-									data-src="img/products/4.jpg" src="img/null.png" alt="Три шоколада"
-									class="popup-product__image">
-							</picture>
-						</div>
-						<div class="popup-product__description">
-							<h2 class="popup-product__title title">Три шоколада</h2>
-							<p class="popup-product__consist">
-								<span>Состав:</span> яйца, сахар, мука, какао,
-								разрыхлитель, молоко, темный шоколад, масло сливочное, молоко, желатин, вода.
-							</p>
-							<div class="popup-product__price">Цена: <span>2 000</span> руб.</div>
-							<div class="popup-product__weight">Вес: <span>600 г.</span></div>
-							<div class="popup-product__delivery delivery-product-popup">
-								<div class="delivery-product-popup__item _icon-clock">Доставим в любое удобное время (доставка
-									осуществляется до 21:00)</div>
-								<div class="delivery-product-popup__item _icon-location">Доставим в любое удобное место
-									(Доставка
-									осуществляется по г. Санкт-Петербург и Лен. области.)</div>
-								<div class="delivery-product-popup__item">
-									<div class="delivery-product-popup__icon _icon-truck"></div>
-									<div class="delivery-product-popup__text">Подробнее об условиях доставки можно узнать <a
-											href="#" data-popup="#delivery">здесь</a></div>
-								</div>
-								<div class="delivery-product-popup__item delivery-product-popup__item_small">*заказ нужно
-									сделать
-									минимум за 3 дня до даты
-									доставки</div>
-								<div class="delivery-product-popup__item delivery-product-popup__item_small">*внешний вид торта
-									может
-									отличаться</div>
-							</div>
-							<button class="popup-product__buy btn" type="button" data-popup="#order-ready">Заказать</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="popup-product-5" aria-hidden="true" class="popup">
-			<div class="popup__wrapper">
-				<div class="popup__content popup-product__content">
-					<button data-close type="button" class="popup__close"></button>
-					<div class="popup-product__body">
-						<div class="popup-product__picture-ibg">
-							<picture>
-								<source data-srcset="img/products/5.webp"
-									srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-									type="image/webp"><img
-									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-									data-src="img/products/5.jpg" src="img/null.png" alt="Морковный торт"
-									class="popup-product__image">
-							</picture>
-						</div>
-						<div class="popup-product__description">
-							<h2 class="popup-product__title title">Морковный торт</h2>
-							<p class="popup-product__consist">
-								<span>Состав:</span> яйца, сахар, масло растительное,
-								морковь, мука, корица, соль, разрыхлитель, сода, масло сливочное, сыр сливочный, сахарная
-								пудра.
-							</p>
-							<div class="popup-product__price">Цена: <span>2 000</span> руб.</div>
-							<div class="popup-product__weight">Вес: <span>1.3 кг.</span></div>
-							<div class="popup-product__delivery delivery-product-popup">
-								<div class="delivery-product-popup__item _icon-clock">Доставим в любое удобное время (доставка
-									осуществляется до 21:00)</div>
-								<div class="delivery-product-popup__item _icon-location">Доставим в любое удобное место
-									(Доставка
-									осуществляется по г. Санкт-Петербург и Лен. области.)</div>
-								<div class="delivery-product-popup__item">
-									<div class="delivery-product-popup__icon _icon-truck"></div>
-									<div class="delivery-product-popup__text">Подробнее об условиях доставки можно узнать <a
-											href="#" data-popup="#delivery">здесь</a></div>
-								</div>
-								<div class="delivery-product-popup__item delivery-product-popup__item_small">*заказ нужно
-									сделать
-									минимум за 3 дня до даты
-									доставки</div>
-								<div class="delivery-product-popup__item delivery-product-popup__item_small">*внешний вид торта
-									может
-									отличаться</div>
-							</div>
-							<button class="popup-product__buy btn" type="button" data-popup="#order-ready">Заказать</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="popup-product-6" aria-hidden="true" class="popup">
-			<div class="popup__wrapper">
-				<div class="popup__content popup-product__content">
-					<button data-close type="button" class="popup__close"></button>
-					<div class="popup-product__body">
-						<div class="popup-product__picture-ibg">
-							<picture>
-								<source data-srcset="img/products/6.webp"
-									srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-									type="image/webp"><img
-									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-									data-src="img/products/6.jpg" src="img/null.png" alt="Панчо" class="popup-product__image">
-							</picture>
-						</div>
-						<div class="popup-product__description">
-							<h2 class="popup-product__title title">Панчо</h2>
-							<p class="popup-product__consist">
-								<span>Состав:</span> мука, какао, разрыхлитель, яйца,
-								соль, сахар, молоко, масло растительное, сливки, сметана, сахарная пудра, кусочки ананаса,
-								вишня, грецкие орехи, темный шоколад.
-							</p>
-							<div class="popup-product__price">Цена: <span>2 500</span> руб.</div>
-							<div class="popup-product__weight">Вес: <span>2.5 кг.</span></div>
-							<div class="popup-product__add">
-								<input type="checkbox" class="popup-product__input" id="add">
-								<label for="add" class="popup-product__label">Добавить ананасы в торт?</label>
-							</div>
-							<div class="popup-product__delivery delivery-product-popup">
-								<div class="delivery-product-popup__item _icon-clock">Доставим в любое удобное время (доставка
-									осуществляется до 21:00)</div>
-								<div class="delivery-product-popup__item _icon-location">Доставим в любое удобное место
-									(Доставка
-									осуществляется по г. Санкт-Петербург и Лен. области.)</div>
-								<div class="delivery-product-popup__item">
-									<div class="delivery-product-popup__icon _icon-truck"></div>
-									<div class="delivery-product-popup__text">Подробнее об условиях доставки можно узнать <a
-											href="#" data-popup="#delivery">здесь</a></div>
-								</div>
-								<div class="delivery-product-popup__item delivery-product-popup__item_small">*заказ нужно
-									сделать
-									минимум за 3 дня до даты
-									доставки</div>
-								<div class="delivery-product-popup__item delivery-product-popup__item_small">*внешний вид торта
-									может
-									отличаться</div>
-							</div>
-							<button class="popup-product__buy btn" type="button" data-popup="#order-ready">Заказать</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="popup-product-7" aria-hidden="true" class="popup">
-			<div class="popup__wrapper">
-				<div class="popup__content popup-product__content">
-					<button data-close type="button" class="popup__close"></button>
-					<div class="popup-product__body">
-						<div class="popup-product__picture-ibg">
-							<picture>
-								<source data-srcset="img/products/7.webp"
-									srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-									type="image/webp"><img
-									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-									data-src="img/products/7.jpg" src="img/null.png" alt="Сникерс" class="popup-product__image">
-							</picture>
-						</div>
-						<div class="popup-product__description">
-							<h2 class="popup-product__title title">Сникерс</h2>
-							<p class="popup-product__consist">
-								<span>Состав:</span> яйца, сахар, мука, разрыхлитель,
-								какао-порошок, масло растительное, вода, творожный сыр, сливки, сахарная пудра, темный
-								шоколад, масло сливочное, арахис.
-							</p>
-							<div class="popup-product__price">Цена: <span>2 500</span> руб.</div>
-							<div class="popup-product__weight">Вес: <span>2 кг.</span></div>
-							<div class="popup-product__delivery delivery-product-popup">
-								<div class="delivery-product-popup__item _icon-clock">Доставим в любое удобное время (доставка
-									осуществляется до 21:00)</div>
-								<div class="delivery-product-popup__item _icon-location">Доставим в любое удобное место
-									(Доставка
-									осуществляется по г. Санкт-Петербург и Лен. области.)</div>
-								<div class="delivery-product-popup__item">
-									<div class="delivery-product-popup__icon _icon-truck"></div>
-									<div class="delivery-product-popup__text">Подробнее об условиях доставки можно узнать <a
-											href="#" data-popup="#delivery">здесь</a></div>
-								</div>
-								<div class="delivery-product-popup__item delivery-product-popup__item_small">*заказ нужно
-									сделать
-									минимум за 3 дня до даты
-									доставки</div>
-								<div class="delivery-product-popup__item delivery-product-popup__item_small">*внешний вид торта
-									может
-									отличаться</div>
-							</div>
-							<button class="popup-product__buy btn" type="button" data-popup="#order-ready">Заказать</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="popup-product-8" aria-hidden="true" class="popup">
-			<div class="popup__wrapper">
-				<div class="popup__content popup-product__content">
-					<button data-close type="button" class="popup__close"></button>
-					<div class="popup-product__body">
-						<div class="popup-product__picture-ibg">
-							<picture>
-								<source data-srcset="img/products/8.webp"
-									srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-									type="image/webp"><img
-									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-									data-src="img/products/8.jpg" src="img/null.png" alt="Тёмный лес"
-									class="popup-product__image">
-							</picture>
-						</div>
-						<div class="popup-product__description">
-							<h2 class="popup-product__title title">Тёмный лес</h2>
-							<p class="popup-product__consist">
-								<span>Состав:</span> яйца, сахар, мука, какао,
-								разрыхлитель, масло растительное, молоко, сливки, сахарная пудра, сливочный сыр.
-							</p>
-							<div class="popup-product__price">Цена: <span>3 000</span> руб.</div>
-							<div class="popup-product__weight">Вес: <span>2.1 кг.</span></div>
-							<div class="popup-product__delivery delivery-product-popup">
-								<div class="delivery-product-popup__item _icon-clock">Доставим в любое удобное время (доставка
-									осуществляется до 21:00)</div>
-								<div class="delivery-product-popup__item _icon-location">Доставим в любое удобное место
-									(Доставка
-									осуществляется по г. Санкт-Петербург и Лен. области.)</div>
-								<div class="delivery-product-popup__item">
-									<div class="delivery-product-popup__icon _icon-truck"></div>
-									<div class="delivery-product-popup__text">Подробнее об условиях доставки можно узнать <a
-											href="#" data-popup="#delivery">здесь</a></div>
-								</div>
-								<div class="delivery-product-popup__item delivery-product-popup__item_small">*заказ нужно
-									сделать
-									минимум за 3 дня до даты
-									доставки</div>
-								<div class="delivery-product-popup__item delivery-product-popup__item_small">*внешний вид торта
-									может
-									отличаться</div>
-							</div>
-							<button class="popup-product__buy btn" type="button" data-popup="#order-ready">Заказать</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<div id="delivery" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
@@ -1297,29 +737,22 @@
 					<p class="popup-delivery__text">Заказы доставляются ежедневно (7 дней в неделю).</p>
 					<h3 class="popup-delivery__subtitle">Тарифы на доставку:</h3>
 					<p class="popup-delivery__text">По СПб (Адмиралтейский район, Василеостровский район, Выборгский район,
-						Калининский район, Кировский район, Колпинский район, Красногвардейский район, Московский район,
-						Невский
-						район, Петроградский район, Приморский район (метро Беговая, Комендантский пр, Черная речка,
-						Пионерская,
+						Калининский район, Кировский район, Колпинский район, Красногвардейский район, Московский район, Невский
+						район, Петроградский район, Приморский район (метро Беговая, Комендантский пр, Черная речка, Пионерская,
 						Старая дервеня), Фрунзенский район, Центральный район) Мурино, Кудрово - <b>390 руб.</b></p>
-					<p class="popup-delivery__text">При заказе торта на сумму свыше 5000 рублей - доставка в выше
-						перечисленные
+					<p class="popup-delivery__text">При заказе торта на сумму свыше 5000 рублей - доставка в выше перечисленные
 						районы города Спб - <b>БЕСПЛАТНО!</b></p>
 					<p class="popup-delivery__text">Павловск, Парголово, Пушкин, Колпино, Красное село, Горелова, Бугры,
 						Металлострой, Ольгино, Всеволожск, Щеглово, Колтуши - <b>500 руб.</b> (акция на доставку не действует)
 					</p>
-					<p class="popup-delivery__text">Песочный, Петергоф, Ропша, Стрельна, Токсово, Юкки, дер.Мистолово -
-						<b>600
-							руб.</b> (акция на доставку не действует)
-					</p>
+					<p class="popup-delivery__text">Песочный, Петергоф, Ропша, Стрельна, Токсово, Юкки, дер.Мистолово - <b>600
+							руб.</b> (акция на доставку не действует)</p>
 					<p class="popup-delivery__text">Ломоносов, Сертолово, Гатчина, Сестрорецк, Лисий нос, пос им. Морозова,
 						Ладожское озеро (Мир маяков) - <b>1000 руб.</b> (акция на доставку не действует)</p>
-					<p class="popup-delivery__text">Зеленогорск, Кронштадт, Репино - 1000 - <b>1500 руб.</b> (акция на
-						доставку
+					<p class="popup-delivery__text">Зеленогорск, Кронштадт, Репино - 1000 - <b>1500 руб.</b> (акция на доставку
 						не действует)</p>
 					<p class="popup-delivery__text">За КАД - 390 + 30 руб/км</p>
-					<p class="popup-delivery__text">Стоимость доставки в другие районы СПБ и Ленинградской области за
-						пределами
+					<p class="popup-delivery__text">Стоимость доставки в другие районы СПБ и Ленинградской области за пределами
 						КАД уточняйте по телефону.</p>
 					<h3 class="popup-delivery__subtitle">Самовывоз:</h3>
 					<p class="popup-delivery__text">Вы можете забрать торт бесплатно по адресу: г. Санкт-Перербург, метро
@@ -1338,13 +771,10 @@
 					<form action="sendmail/sendmail.php" id="form" class="form-popup__body" data-ajax method="POST">
 						<h2 class="form-popup__title">Обратный звонок</h2>
 						<div class="form-popup__item">
-							<input type="text" id="formName" name="name" class="form-popup__input" placeholder="Имя*"
-								data-required data-error="Введите имя, чтобы мы знали, как к Вам обращаться" autocomplete="off">
+							<input type="text" id="formName" name="name" class="form-popup__input" placeholder="Имя*" data-required data-error="Введите имя, чтобы мы знали, как к Вам обращаться" autocomplete="off">
 						</div>
 						<div class="form-popup__item">
-							<input type="text" id="formPhone" name="phone" class="form-popup__input" data-required
-								data-error="Введите номер телефона, чтобы мы могли связаться с Вами" placeholder="Телефон*"
-								autocomplete="off">
+							<input type="text" id="formPhone" name="phone" class="form-popup__input" data-required data-error="Введите номер телефона, чтобы мы могли связаться с Вами" placeholder="Телефон*" autocomplete="off">
 						</div>
 						<div class="form-popup__item">
 							<label for="formComment" class="form-popup__label">Комментарий:</label>
@@ -1366,18 +796,13 @@
 					<form action="sendmail/sendmail.php" id="form" class="form-popup__body" data-ajax method="POST">
 						<h2 class="form-popup__title">Ваш заказ</h2>
 						<div class="form-popup__item">
-							<input type="text" id="formName" name="name" class="form-popup__input" placeholder="Имя*"
-								data-required data-error="Введите имя, чтобы мы знали, как к Вам обращаться" autocomplete="off">
+							<input type="text" id="formName" name="name" class="form-popup__input" placeholder="Имя*" data-required data-error="Введите имя, чтобы мы знали, как к Вам обращаться" autocomplete="off">
 						</div>
 						<div class="form-popup__item">
-							<input type="text" id="formPhone" name="phone" class="form-popup__input" data-required
-								data-error="Введите номер телефона, чтобы мы могли связаться с Вами" placeholder="Телефон*"
-								autocomplete="off">
+							<input type="text" id="formPhone" name="phone" class="form-popup__input" data-required data-error="Введите номер телефона, чтобы мы могли связаться с Вами" placeholder="Телефон*" autocomplete="off">
 						</div>
 						<div class="form-popup__item">
-							<input type="text" id="formAddress" name="address" class="form-popup__input" data-required
-								data-error="Введите адрес, чтобы мы знали, куда отправить заказ" placeholder="Адрес*"
-								autocomplete="off">
+							<input type="text" id="formAddress" name="address" class="form-popup__input" data-required data-error="Введите адрес, чтобы мы знали, куда отправить заказ" placeholder="Адрес*" autocomplete="off">
 						</div>
 						<div class="form-popup__item">
 							<div class="form-popup__text">Способ оплаты:</div>
@@ -1398,8 +823,7 @@
 						</div>
 						<div class="form-popup__item">
 							<div class="form-popup__checkbox checkbox-form-popup">
-								<input type="checkbox" id="formAgreement" name="agreement"
-									class="checkbox-form-popup__input form-popup__input" data-required checked>
+								<input type="checkbox" id="formAgreement" name="agreement" class="checkbox-form-popup__input form-popup__input" data-required checked>
 								<label for="formAgreement" class="checkbox-form-popup__label"><span>Я даю свое согласие на
 										обработку
 										персональных данных в соответствии с <a href="">Условиями</a>*</span></label>
@@ -1435,7 +859,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220905145016"></script>
+	<script src="js/app.min.js?_v=20220921224658"></script>
 </body>
 
 </html>
