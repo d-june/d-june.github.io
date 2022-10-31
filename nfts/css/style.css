@@ -320,15 +320,15 @@ h6 {
   }
 }
 
-@supports (margin-bottom: clamp( 3.125rem , 1.6513157895rem  +  7.3684210526vw , 7.5rem )) {
+@supports (margin-bottom: clamp( 0.0000000625rem , -2.5263157059rem  +  12.6315788421vw , 7.5rem )) {
   .header__container {
-    margin-bottom: clamp( 3.125rem , 1.6513157895rem  +  7.3684210526vw , 7.5rem );
+    margin-bottom: clamp( 0.0000000625rem , -2.5263157059rem  +  12.6315788421vw , 7.5rem );
   }
 }
 
-@supports not (margin-bottom: clamp( 3.125rem , 1.6513157895rem  +  7.3684210526vw , 7.5rem )) {
+@supports not (margin-bottom: clamp( 0.0000000625rem , -2.5263157059rem  +  12.6315788421vw , 7.5rem )) {
   .header__container {
-    margin-bottom: calc(3.125rem + 4.375 * (100vw - 20rem) / 59.375);
+    margin-bottom: calc(0.0000000625rem + 7.4999999375 * (100vw - 20rem) / 59.375);
   }
 }
 
@@ -830,15 +830,15 @@ h6 {
   }
 }
 
-@supports (margin-bottom: clamp( 4.375rem , 1.6381578947rem  +  13.6842105263vw , 12.5rem )) {
+@supports (padding-bottom: clamp( 4.375rem , 1.6381578947rem  +  13.6842105263vw , 12.5rem )) {
   .history {
-    margin-bottom: clamp( 4.375rem , 1.6381578947rem  +  13.6842105263vw , 12.5rem );
+    padding-bottom: clamp( 4.375rem , 1.6381578947rem  +  13.6842105263vw , 12.5rem );
   }
 }
 
-@supports not (margin-bottom: clamp( 4.375rem , 1.6381578947rem  +  13.6842105263vw , 12.5rem )) {
+@supports not (padding-bottom: clamp( 4.375rem , 1.6381578947rem  +  13.6842105263vw , 12.5rem )) {
   .history {
-    margin-bottom: calc(4.375rem + 8.125 * (100vw - 20rem) / 59.375);
+    padding-bottom: calc(4.375rem + 8.125 * (100vw - 20rem) / 59.375);
   }
 }
 
@@ -884,7 +884,7 @@ h6 {
 
 .history__slider {
   height: 12.5rem;
-  max-width: 19.375rem;
+  max-width: 18.75rem;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -2537,6 +2537,8 @@ button.swiper-pagination-bullet {
 
   .history__row {
     gap: 1.25rem;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .history__item {
@@ -2561,7 +2563,7 @@ button.swiper-pagination-bullet {
         -ms-transform: scale(1);
             transform: scale(1);
     margin-left: 0rem;
-    margin-right: 1.25rem;
+    margin-right: 0rem;
   }
 
   .pictures-item-gallery__left {
