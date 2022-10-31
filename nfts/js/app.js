@@ -3443,7 +3443,6 @@
             wrapperClass: "history__wrapper",
             slideClass: "history__slide",
             slideActiveClass: "history__slide_active",
-            freeMode: true,
             navigation: {
                 prevEl: ".swiper-button-prev",
                 nextEl: ".swiper-button-next"
