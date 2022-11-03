@@ -456,6 +456,7 @@ h6 {
   text-transform: uppercase;
   padding: 0.3125rem 0rem;
   display: block;
+  font-size: 1rem;
 }
 
 .social__item {
@@ -1428,7 +1429,7 @@ button.swiper-pagination-bullet {
   }
 
   .swiper-slide__image-ibg {
-    height: 50vh;
+    height: 45vh;
     width: 100%;
     margin-bottom: 3.125rem;
   }
