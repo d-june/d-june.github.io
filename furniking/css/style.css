@@ -2232,6 +2232,7 @@ h2 {
 }
 
 .products-main__top {
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
