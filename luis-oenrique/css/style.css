@@ -6895,7 +6895,7 @@ fieldset:disabled .btn {
 
 body {
   font-weight: 500;
-  padding: 0;
+  padding: 0 !important;
 }
 
 .button {
@@ -6981,6 +6981,7 @@ body {
 .menu__list {
   list-style: none;
   padding: 1.25rem;
+  text-transform: uppercase;
 }
 
 .menu__item a {
@@ -7029,11 +7030,10 @@ body {
 }
 
 .no-webp .footer{
-  background: url("../img/contact-bg.jpg") center/cover no-repeat; }
+  background: url("img/contact-bg.jpg") center/cover no-repeat; }
 
 .footer {
   padding: 8.75rem 0rem 1.25rem 0rem;
-  background: url("../img/contact-bg.webp") center/cover no-repeat;
   color: #fff;
   position: relative;
 }
