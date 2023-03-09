@@ -370,7 +370,7 @@ h2 {
 .top-header__body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 7.8125rem 7.8125rem;
+  -ms-grid-columns: 1fr 9rem 7.8125rem;
   grid-template-columns: 1fr 7.8125rem 7.8125rem;
   padding: 1rem 0rem;
   gap: 2.625rem;
