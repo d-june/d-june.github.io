@@ -322,6 +322,7 @@ h6 {
 
 .btn {
   background: #402F2C;
+  border: 1px solid rgba(104, 90, 82, 0.46);
   color: #fff;
   font-size: 1.125rem;
   line-height: 133%;
