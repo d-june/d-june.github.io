@@ -1338,18 +1338,6 @@ h6 {
           filter: blur(300px);
 }
 
-.blog__container::after {
-  content: "";
-  position: absolute;
-  width: 454px;
-  height: 454px;
-  right: -10%;
-  bottom: -10%;
-  background: #72339B;
-  -webkit-filter: blur(300px);
-          filter: blur(300px);
-}
-
 .blog__cards {
   display: -ms-grid;
   display: grid;
