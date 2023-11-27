@@ -1363,6 +1363,7 @@ body::after {
 .footer {
   background: #222222 url("../img/wave-footer.svg") top 400px left 0/cover repeat-x;
   color: #fff;
+  padding: 3.59375rem 3.25rem 4.3125rem 3.25rem;
 }
 
 .footer__container {
@@ -1373,7 +1374,6 @@ body::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 3.59375rem 3.25rem 4.3125rem 3.25rem;
   font-family: FuturaFuturisLightC;
   color: #E9E9E9;
   gap: 3.4375rem;
@@ -3943,12 +3943,12 @@ button.swiper-pagination-bullet {
 
   .footer {
     background: #222222 url("../img/wave-footer.svg") top 110px left 0/auto repeat-x;
+    padding: 3.75rem 0 6.8125rem 0;
   }
 
   .footer__container {
     -ms-grid-columns: 22% auto 23%;
     grid-template-columns: 22% auto 23%;
-    padding: 3.75rem 0 6.8125rem 0;
     gap: 4.875rem;
   }
 
