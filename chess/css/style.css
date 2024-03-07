@@ -443,7 +443,7 @@ body::after {
   background: #e9ded4;
 }
 
-.footer__container {
+.footer__wrapper {
   padding-top: 40px;
   padding-bottom: 72px;
 }
@@ -452,6 +452,19 @@ body::after {
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
+}
+
+.not-found__wrapper {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero {
@@ -610,7 +623,7 @@ body::after {
   }
 }
 
-.about {
+.about__wrapper {
   padding-top: 80px;
   padding-bottom: 185px;
   display: -webkit-box;
@@ -748,7 +761,7 @@ body::after {
   color: #3057a2;
 }
 
-.stages {
+.stages__wrapper {
   position: relative;
 }
 
@@ -915,13 +928,13 @@ body::after {
   width: 100%;
 }
 
-.participants {
-  padding-top: 200px;
-  padding-bottom: 140px;
-}
-
 .participants__container {
   overflow: hidden;
+}
+
+.participants__wrapper {
+  padding-top: 200px;
+  padding-bottom: 140px;
 }
 
 .participants__items {
@@ -1110,7 +1123,7 @@ body::after {
 }
 
 @media (max-width: 991.98px) {
-  .about {
+  .about__wrapper {
     gap: 10px;
   }
 
@@ -1128,17 +1141,6 @@ body::after {
   }
 }
 
-@media (max-width: 610px) {
-  .stages__picture {
-    left: 40px;
-    top: 27.5%;
-    max-width: 340px;
-    -webkit-transform: rotate(-3deg);
-        -ms-transform: rotate(-3deg);
-            transform: rotate(-3deg);
-  }
-}
-
 @media (max-width: 86.25em) {
   [class*=__container] {
     max-width: 60.625rem;
@@ -1150,7 +1152,7 @@ body::after {
     max-width: 46.875rem;
   }
 
-  .about {
+  .about__wrapper {
     padding-top: 48px;
     padding-bottom: 120px;
   }
@@ -1299,7 +1301,7 @@ body::after {
             transform: rotate(-3deg);
   }
 
-  .participants {
+  .participants__wrapper {
     padding-top: 122px;
     padding-bottom: 102px;
   }
@@ -1477,6 +1479,15 @@ body::after {
 
   .about__link {
     font-size: 18px;
+  }
+
+  .stages__picture {
+    left: 20px;
+    top: 27.5%;
+    width: 340px;
+    -webkit-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+            transform: rotate(-3deg);
   }
 
   .participants__top {

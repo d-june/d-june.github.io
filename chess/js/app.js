@@ -101,7 +101,7 @@
         let current = perPage;
         width = slider.offsetWidth;
         let timerId = 0;
-        window.addEventListener("resize", (() => {
+        if (autoPlay) window.addEventListener("resize", (() => {
             init();
         }));
         function init() {
@@ -177,6 +177,14 @@
             }), 4e3);
         }
     };
+    const sliderRemove = (sliderLine, items) => {
+        sliderLine.removeAttribute("style");
+        items.forEach((item => {
+            if (item.length > 1) item.forEach((i => {
+                i.removeAttribute("style");
+            })); else item.removeAttribute("style");
+        }));
+    };
     const stagesSliderInit = () => {
         const slider = document.querySelector(".stages__slider");
         const items = document.querySelectorAll(".stages__item");
@@ -187,13 +195,17 @@
         const bullets = document.querySelector(".stages__slider-bullets");
         const maxWidth = 767.98;
         sliderInit(1, slider, groupItems, sliderLine, nextButton, prevButton, null, null, maxWidth, false, bullets);
-        window.addEventListener("resize", (() => {
-            if (slider.offsetWidth < 767.98) sliderInit(1, slider, groupItems, sliderLine, nextButton, prevButton, null, null, maxWidth, false, bullets);
-        }));
     };
     const stagesSlider = document.querySelector(".stages__slider");
+    const sliderLine = document.querySelector(".stages__items");
+    const items = document.querySelectorAll(".stages__item");
     const stagesSliderWidth = stagesSlider.offsetWidth;
-    if (stagesSliderWidth < 767.98) stagesSliderInit();
+    if (stagesSliderWidth < 767.98) stagesSliderInit(); else sliderRemove(sliderLine, items);
+    window.addEventListener("resize", (() => {
+        const stagesSlider = document.querySelector(".stages__slider");
+        const width = stagesSlider.offsetWidth;
+        if (width < 767.98) stagesSliderInit(); else sliderRemove(sliderLine, items);
+    }));
     const participantsSliderInit = perPage => {
         const slider = document.querySelector(".participants__slider");
         const items = document.querySelectorAll(".participants__item");
@@ -202,7 +214,6 @@
         const allSlides = document.querySelector(".participants__slider-all");
         const nextButton = document.querySelector(".participants__slider-next");
         const prevButton = document.querySelector(".participants__slider-prev");
-        slider.offsetWidth;
         sliderInit(perPage, slider, items, sliderLine, nextButton, prevButton, currentSlide, allSlides, null, true, null);
     };
     const slider = document.querySelector(".participants__slider");
